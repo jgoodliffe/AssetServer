@@ -1,0 +1,14 @@
+Nov 11, 2019 12:24:37 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Nov 11, 2019 12:24:37 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerMon Nov 11 12:24:37 GMT 2019 New server instance.
+Nov 11, 2019 12:24:37 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerMon Nov 11 12:24:37 GMT 2019 main.Server successfully initialised.
+Nov 11, 2019 12:24:37 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerMon Nov 11 12:24:37 GMT 2019 Connecting to datastore...
+Nov 11, 2019 12:24:37 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Nov 11, 2019 12:24:37 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreMon Nov 11 12:24:37 GMT 2019 Found datastore Directory.
+Nov 11, 2019 12:24:37 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreMon Nov 11 12:24:37 GMT 2019 Connected to SQLite Database.

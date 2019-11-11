@@ -6,21 +6,28 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.sql.*;
+import LoggingSystem.LoggingSystem;
 import org.apache.commons.lang3.StringUtils;
 
-
+/**
+ * Connection to SQLite Database
+ */
 public class DataStore {
+    private Connection conn;
+    private LoggingSystem log;
 
     public DataStore(){
-
+        log = new LoggingSystem(this.getClass().getCanonicalName());
     }
 
+    public Connection getConn(){
+        return conn;
+    }
 
     public void init() {
-        Connection conn = null;
         String dbDir = dbDirectoryCreator();
         if(dbDir.equals("")){
-            System.out.println("Invalid database directory! Aborting.");
+            log.errorMessage("Invalid database directory! Aborting.");
             return;
         }
         try {
@@ -35,11 +42,11 @@ public class DataStore {
                 DatabaseMetaData meta = conn.getMetaData();
             }
 
-            System.out.println("Connected to SQLite Database.");
+            log.infoMessage("Connected to SQLite Database.");
 
         } catch (SQLException e) {
-            System.out.println("SQL Exception");
-            e.printStackTrace();
+            log.errorMessage("SQL Exception");
+            log.errorMessage(e.getMessage());
         } finally {
             try {
                 if (conn != null) {
@@ -47,7 +54,7 @@ public class DataStore {
                 } else {
                 }
             } catch (SQLException e) {
-                e.printStackTrace();
+                log.errorMessage("SQL Exception: "+e.getMessage());
             }
         }
     }
@@ -66,18 +73,18 @@ public class DataStore {
         //Check if a datastore directory exists..
         if(Files.exists(path)){
             //Datastore directory exists, check for db....
-            System.out.println("Found datastore Directory.");
+            log.infoMessage("Found datastore Directory.");
             String relative = getRelativePath(dataStoreDir);
             return relative + "mainDB.db";
         } else{
             //Create new datastore directory..
             Boolean newdir = new File(currentDir+"/Data").mkdirs();
             if(newdir){
-                System.out.println("Created new directory - Data.");
+                log.infoMessage("Created new directory - Data.");
                 currentDir = dataStoreDir;
                 return getRelativePath(dataStoreDir);
             } else{
-                System.out.println("Unable to create new directory - could already exist?");
+                log.errorMessage("Unable to create new directory - could already exist?");
                 return "";
             }
         }
@@ -87,7 +94,7 @@ public class DataStore {
         String relPath = "";
         String main[] = dbpath.split("/");
         relPath = main[main.length-1]+"/";
-        System.out.println(relPath);
+        //log.infoMessage(relPath);
         return relPath;
     }
 }

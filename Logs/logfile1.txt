@@ -1,0 +1,6 @@
+Nov 11, 2019 12:22:01 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Nov 11, 2019 12:22:01 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreMon Nov 11 12:22:01 GMT 2019 Found datastore Directory.
+Nov 11, 2019 12:22:01 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreMon Nov 11 12:22:01 GMT 2019 Connected to SQLite Database.

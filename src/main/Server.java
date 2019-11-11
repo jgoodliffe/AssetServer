@@ -22,14 +22,14 @@ public class Server extends Thread {
     static int i = 0;
 
     public Server(){
-        log = new LoggingSystem("main.Server");
-        System.out.println("New server instance");
+        log = new LoggingSystem(this.getClass().getCanonicalName());
+        log.infoMessage("New server instance.");
         try{
             this.serverSocket = new ServerSocket(port);
             log.infoMessage("main.Server successfully initialised.");
             clients = Collections.synchronizedList(new ArrayList<ClientHandler>());
             ServerOn = true;
-            System.out.println("Connecting to datastore...");
+            log.infoMessage("Connecting to datastore...");
             mainStore = new DataStore();
             mainStore.init();
             this.run();

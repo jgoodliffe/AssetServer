@@ -1,5 +1,6 @@
 package LoggingSystem;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
@@ -19,9 +20,11 @@ public class LoggingSystem {
 
     public LoggingSystem(String tag){
         today = Calendar.getInstance().getTime();
-        logName = tag+today.toString();
+        String today2 = Calendar.getInstance().toString();
+        logName = tag+today.toString()+" ";
         try{
-            fh = new FileHandler("%h/Logs/logfile%u.txt");
+            new File(System.getProperty("user.dir")+"/Logs/").mkdirs();
+            fh = new FileHandler(System.getProperty("user.dir")+"/Logs/logfile" + tag +"%u.txt");
             logger.addHandler(fh);
             SimpleFormatter sf = new SimpleFormatter();
             fh.setFormatter(sf);
@@ -34,12 +37,12 @@ public class LoggingSystem {
 
     public void errorMessage(String message){
         if(logger!=null){
-            logger.severe(message);
+            logger.severe(logName+message);
         }
     }
     public void infoMessage(String message){
         if(logger!=null){
-            logger.info(message);
+            logger.info(logName+message);
         }
     }
 }
