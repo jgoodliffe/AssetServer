@@ -1,0 +1,28 @@
+Nov 11, 2019 6:16:16 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Nov 11, 2019 6:16:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerMon Nov 11 18:16:16 GMT 2019 New server instance.
+Nov 11, 2019 6:16:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerMon Nov 11 18:16:16 GMT 2019 main.Server successfully initialised.
+Nov 11, 2019 6:16:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerMon Nov 11 18:16:16 GMT 2019 Connecting to datastore...
+Nov 11, 2019 6:16:16 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Nov 11, 2019 6:16:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreMon Nov 11 18:16:16 GMT 2019 Found datastore Directory.
+Nov 11, 2019 6:16:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreMon Nov 11 18:16:16 GMT 2019 Running consistency check:
+Nov 11, 2019 6:16:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreMon Nov 11 18:16:16 GMT 2019 
+
+Consistency Report
+ - Users table exists
+ - Events table exists
+ - Assets table exists
+ - Staff table exists
+ - Transport table exists
+
+Nov 11, 2019 6:16:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreMon Nov 11 18:16:16 GMT 2019 Passed DB Consistency check.
+Nov 11, 2019 6:16:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreMon Nov 11 18:16:16 GMT 2019 Connected to SQLite Database.

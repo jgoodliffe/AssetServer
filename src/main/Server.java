@@ -12,33 +12,41 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Main Server Class
+ */
 public class Server extends Thread {
     private ServerSocket serverSocket;
     private LoggingSystem log;
-    boolean ServerOn;
+    volatile boolean ServerOn;
     DataStore mainStore;
     static protected List<ClientHandler> clients;
-    private int port = 10000;
+    private int port = 20000;
     static int i = 0;
 
+    /**
+     * Constructor - Initalises server & Starts thread...
+     */
     public Server(){
         log = new LoggingSystem(this.getClass().getCanonicalName());
         log.infoMessage("New server instance.");
         try{
             this.serverSocket = new ServerSocket(port);
             log.infoMessage("main.Server successfully initialised.");
-            clients = Collections.synchronizedList(new ArrayList<ClientHandler>());
+            clients = Collections.synchronizedList(new ArrayList<>());
             ServerOn = true;
             log.infoMessage("Connecting to datastore...");
             mainStore = new DataStore();
-            mainStore.init();
-            this.run();
+            //this.run();
         } catch (IOException e) {
             log.errorMessage(e.getMessage());
             System.out.println("Exception occurred. 1");
         }
     }
 
+    /**
+     * Main Server thread.
+     */
     public void run(){
         while(ServerOn){
             try{
@@ -46,7 +54,8 @@ public class Server extends Thread {
                 log.infoMessage(client.getInetAddress().getHostName() + " Connected");
                 DataInputStream dis = new DataInputStream(client.getInputStream());
                 DataOutputStream dos = new DataOutputStream(client.getOutputStream());
-                ClientHandler newClient = new ClientHandler(client, "client "+i, dis, dos, this);
+                JSONParse jp = new JSONParse();
+                ClientHandler newClient = new ClientHandler(client, "client "+i, dis, dos, this, mainStore ,jp);
                 Thread t = new Thread(newClient);
                 clients.add(newClient);
                 t.start();
@@ -59,6 +68,10 @@ public class Server extends Thread {
                 log.errorMessage(e.toString());
             }
         }
+    }
+
+    public void stopServer(){
+        ServerOn = false;
     }
 
     public void refreshClientList(){
