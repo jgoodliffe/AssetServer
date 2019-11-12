@@ -2,6 +2,8 @@ package main;
 
 import LoggingSystem.LoggingSystem;
 import dbSystem.DataStore;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -26,6 +28,7 @@ public class Server extends Thread {
 
     /**
      * Constructor - Initalises server & Starts thread...
+     *
      */
     public Server(){
         log = new LoggingSystem(this.getClass().getCanonicalName());
