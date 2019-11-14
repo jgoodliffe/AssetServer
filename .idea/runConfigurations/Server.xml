@@ -5,7 +5,7 @@
     <option name="MAIN_CLASS_NAME" value="Main" />
     <module name="AssetServer" />
     <option name="PROGRAM_PARAMETERS" value="-Xdock:name=Asset Server" />
-    <option name="VM_PARAMETERS" value="-p javafx-sdk-11.0.2/lib --add-modules javafx.controls " />
+    <option name="VM_PARAMETERS" value="--module-path javafx-sdk-11.0.2/lib --add-modules=javafx.controls,javafx.fxml" />
     <method v="2">
       <option name="Make" enabled="true" />
     </method>

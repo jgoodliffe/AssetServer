@@ -1,33 +1,17 @@
-import javafx.animation.Animation;
-import javafx.animation.Transition;
-import javafx.application.Platform;
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
-import javafx.scene.Parent;
-import javafx.scene.control.*;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
-import javafx.scene.text.Font;
-import javafx.scene.text.TextAlignment;
-import main.Server;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 
 public class Main extends Application {
-    private Server server;
-    private Thread serverThread;
-    private Circle statusOrb;
-    private Label statusLabel;
-    private TextArea consoleOutput;
-    private Boolean serverRunning = false;
+    //private Server server;
+    //private Thread serverThread;
+    //private Circle statusOrb;
+    //private Label statusLabel;
+    //private TextArea consoleOutput;
+    //private Boolean serverRunning = false;
 
     /**
      * Main Method
@@ -37,21 +21,7 @@ public class Main extends Application {
         launch(args);
     }
 
-    public void updateColour(Color color){
-        statusOrb.setFill(color);
-        if(statusOrb.getFill().equals(Color.ORANGE)){
-            statusLabel.setText("Starting Server");
-        } else if(statusOrb.getFill().equals(Color.GOLD)){
-            statusLabel.setText("Server Stopped");
-        } else if(statusOrb.getFill().equals(Color.LIMEGREEN)){
-            statusLabel.setText("Server Running");
-        }
-    }
-
-    public void updateConsole(String ud){
-        consoleOutput.setText(consoleOutput.getText()+"\n"+ud);
-    }
-
+    /*
     public HBox buttonBox(){
         HBox hbox = new HBox();
         hbox.setPadding(new Insets(15,12,15,12));
@@ -91,6 +61,9 @@ public class Main extends Application {
         return hbox;
     }
 
+     */
+
+    /*
     private VBox bottomPortion(){
         VBox vbox = new VBox();
         HBox hb1 = buttonBox();
@@ -154,8 +127,11 @@ public class Main extends Application {
         return hbox;
     }
 
+     */
+
     @Override
     public void start(Stage stage) throws Exception {
+        /*
         stage.setTitle("Asset Manager - Server");
         stage.setMinHeight(600);
         stage.setMinWidth(400);
@@ -170,10 +146,15 @@ public class Main extends Application {
         border.setCenter(consoleBox());
         border.setTop(hboxTop);
         //border.setLeft(addVBox());
-
-
-        Scene scene = new Scene(border);
-        stage.setScene(scene);
-        stage.show();
+         */
+        try{
+            Parent root = FXMLLoader.load(getClass().getResource("GUI/mainView.fxml"));
+            Scene scene = new Scene(root, 400,600);
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e){
+            System.out.println("Error Loading FXML.");
+            e.printStackTrace();
+        }
     }
 }

@@ -1,0 +1,6 @@
+Nov 13, 2019 4:38:57 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Nov 13, 2019 4:38:57 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerWed Nov 13 16:38:57 GMT 2019 New server instance.
+Nov 13, 2019 4:38:57 PM LoggingSystem.LoggingSystem errorMessage
+SEVERE: main.ServerWed Nov 13 16:38:57 GMT 2019 Address already in use

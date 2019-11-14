@@ -1,9 +1,11 @@
 package main;
 
+import GUI.mainViewController;
 import LoggingSystem.LoggingSystem;
 import dbSystem.DataStore;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.paint.Color;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -19,19 +21,23 @@ import java.util.List;
  */
 public class Server extends Thread {
     private ServerSocket serverSocket;
+    private mainViewController viewController;
     private LoggingSystem log;
     volatile boolean ServerOn;
     DataStore mainStore;
     static protected List<ClientHandler> clients;
-    private int port = 20000;
+    private int port;
     static int i = 0;
 
     /**
      * Constructor - Initalises server & Starts thread...
      *
      */
-    public Server(){
-        log = new LoggingSystem(this.getClass().getCanonicalName());
+    public Server(int port, mainViewController viewController){
+        this.viewController = viewController;
+        this.port = port;
+        viewController.serverStarting();
+        log = new LoggingSystem(this.getClass().getCanonicalName(),viewController);
         log.infoMessage("New server instance.");
         try{
             this.serverSocket = new ServerSocket(port);
@@ -52,6 +58,9 @@ public class Server extends Thread {
      */
     public void run(){
         while(ServerOn){
+            viewController.disableStart();
+            viewController.enableStop();
+            viewController.updateStatus("Waiting for clients...");
             try{
                 Socket client = serverSocket.accept();
                 log.infoMessage(client.getInetAddress().getHostName() + " Connected");
@@ -65,7 +74,7 @@ public class Server extends Thread {
                 i++;
                 System.out.println("Added new client.");
                 new SendMessage(clients, this);
-
+                viewController.serverStarted();
             } catch (Exception e){
                 e.printStackTrace();
                 log.errorMessage(e.toString());
@@ -73,8 +82,18 @@ public class Server extends Thread {
         }
     }
 
+    public boolean isServerOn(){
+        return ServerOn;
+    }
+
     public void stopServer(){
         ServerOn = false;
+        viewController.serverStopping();
+        viewController.updateStatus("Stopping server - disconnecting clients..");
+        viewController.disableStop();
+        viewController.enableStart();
+        viewController.serverStopped();
+        //TODO: Close everything nicely..
     }
 
     public void refreshClientList(){
