@@ -1,6 +1,30 @@
-Nov 13, 2019 4:27:30 PM LoggingSystem.LoggingSystem <init>
+Nov 14, 2019 5:00:05 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Nov 13, 2019 4:27:30 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerWed Nov 13 16:27:30 GMT 2019 New server instance.
-Nov 13, 2019 4:27:30 PM LoggingSystem.LoggingSystem errorMessage
-SEVERE: main.ServerWed Nov 13 16:27:30 GMT 2019 Address already in use
+Nov 14, 2019 5:00:05 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerThu Nov 14 17:00:05 GMT 2019 New server instance.
+Nov 14, 2019 5:00:06 PM LoggingSystem.LoggingSystem errorMessage
+SEVERE: main.ServerThu Nov 14 17:00:05 GMT 2019 Address already in use
+Nov 14, 2019 5:00:06 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Nov 14, 2019 5:00:06 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerThu Nov 14 17:00:06 GMT 2019 New server instance.
+Nov 14, 2019 5:00:07 PM LoggingSystem.LoggingSystem errorMessage
+SEVERE: main.ServerThu Nov 14 17:00:06 GMT 2019 Address already in use
+Nov 14, 2019 5:00:08 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Nov 14, 2019 5:00:08 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerThu Nov 14 17:00:08 GMT 2019 New server instance.
+Nov 14, 2019 5:00:09 PM LoggingSystem.LoggingSystem errorMessage
+SEVERE: main.ServerThu Nov 14 17:00:08 GMT 2019 Address already in use
+Nov 14, 2019 5:00:10 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Nov 14, 2019 5:00:10 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerThu Nov 14 17:00:10 GMT 2019 New server instance.
+Nov 14, 2019 5:00:11 PM LoggingSystem.LoggingSystem errorMessage
+SEVERE: main.ServerThu Nov 14 17:00:10 GMT 2019 Address already in use
+Nov 14, 2019 5:00:12 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Nov 14, 2019 5:00:12 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerThu Nov 14 17:00:12 GMT 2019 New server instance.
+Nov 14, 2019 5:00:12 PM LoggingSystem.LoggingSystem errorMessage
+SEVERE: main.ServerThu Nov 14 17:00:12 GMT 2019 Address already in use

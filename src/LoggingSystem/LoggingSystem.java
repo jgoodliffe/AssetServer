@@ -61,7 +61,7 @@ public class LoggingSystem {
     public void infoMessage(String message){
         if(logger!=null){
             logger.info(logName+message);
-            logger.get
+            //logger.get
         }
     }
 }

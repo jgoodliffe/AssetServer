@@ -151,6 +151,7 @@ public class Main extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("GUI/mainView.fxml"));
             Scene scene = new Scene(root, 400,600);
             stage.setScene(scene);
+            stage.setResizable(false);
             stage.show();
         } catch (Exception e){
             System.out.println("Error Loading FXML.");

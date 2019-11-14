@@ -1,0 +1,4 @@
+Nov 14, 2019 5:25:08 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Nov 14, 2019 5:25:08 PM LoggingSystem.LoggingSystem errorMessage
+SEVERE: main.ClientHandler-Thread[Thread-5,5,main] - localhostThu Nov 14 17:25:08 GMT 2019 Client disconnected.

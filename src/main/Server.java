@@ -48,8 +48,9 @@ public class Server extends Thread {
             mainStore = new DataStore();
             //this.run();
         } catch (IOException e) {
+            viewController.showAlert("Error initialising server", e.getMessage());
+            viewController.serverStopped();
             log.errorMessage(e.getMessage());
-            System.out.println("Exception occurred. 1");
         }
     }
 
@@ -89,11 +90,15 @@ public class Server extends Thread {
     public void stopServer(){
         ServerOn = false;
         viewController.serverStopping();
-        viewController.updateStatus("Stopping server - disconnecting clients..");
+        viewController.updateStatus("Stopping server..");
         viewController.disableStop();
-        viewController.enableStart();
-        viewController.serverStopped();
-        //TODO: Close everything nicely..
+        try{
+            serverSocket.close();
+            viewController.enableStart();
+            viewController.serverStopped();
+        } catch (IOException e){
+            viewController.showAlert("Error Stopping Server!", e.getMessage());
+        }
     }
 
     public void refreshClientList(){
