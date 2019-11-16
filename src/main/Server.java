@@ -1,5 +1,6 @@
 package main;
 
+import GUI.LogViewController;
 import GUI.mainViewController;
 import LoggingSystem.LoggingSystem;
 import dbSystem.DataStore;
@@ -22,6 +23,7 @@ import java.util.List;
 public class Server extends Thread {
     private ServerSocket serverSocket;
     private mainViewController viewController;
+    private LogViewController consoleViewController;
     private LoggingSystem log;
     volatile boolean ServerOn;
     DataStore mainStore;
@@ -33,11 +35,12 @@ public class Server extends Thread {
      * Constructor - Initalises server & Starts thread...
      *
      */
-    public Server(int port, mainViewController viewController){
+    public Server(int port, mainViewController viewController, LogViewController consoleViewController){
         this.viewController = viewController;
         this.port = port;
+        this.consoleViewController = consoleViewController;
         viewController.serverStarting();
-        log = new LoggingSystem(this.getClass().getCanonicalName(),viewController);
+        log = new LoggingSystem(this.getClass().getCanonicalName(),consoleViewController);
         log.infoMessage("New server instance.");
         try{
             this.serverSocket = new ServerSocket(port);
@@ -81,6 +84,12 @@ public class Server extends Thread {
                 log.errorMessage(e.toString());
             }
         }
+        try{
+            System.out.println("CLOSING SERVER");
+            serverSocket.close();
+        } catch (IOException e){
+            log.errorMessage(e.toString());
+        }
     }
 
     public boolean isServerOn(){
@@ -93,6 +102,14 @@ public class Server extends Thread {
         viewController.updateStatus("Stopping server..");
         viewController.disableStop();
         try{
+            for(int i=0; i< clients.size(); i++){
+                if(clients.get(i)==null){
+                    System.out.println("got a null client..");
+                } else{
+                    clients.get(i).stop();
+                    clients.remove(i);
+                }
+            }
             serverSocket.close();
             viewController.enableStart();
             viewController.serverStopped();

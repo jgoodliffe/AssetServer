@@ -8,9 +8,9 @@
 
 <TextFlow maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LogViewController">
     <children>
-        <TextArea fx:id="consoleOutput" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="360.0" style="-fx-control-inner-background:#696969; -fx-font-family: Consolas; -fx-highlight-fill: #00ff00; -fx-highlight-text-fill: #000000; -fx-text-fill: #00ff00; " VBox.vgrow="ALWAYS">
+        <TextArea fx:id="consoleOutput" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="360.0" style="-fx-control-inner-background:#696969; -fx-highlight-fill: #00ff00; -fx-highlight-text-fill: #000000; -fx-text-fill: #00ff00; " VBox.vgrow="ALWAYS">
             <font>
-                <Font name="Monospaced Regular" size="12.0" />
+                <Font name="Consolas" size="11.0" />
             </font>
         </TextArea>
     </children>

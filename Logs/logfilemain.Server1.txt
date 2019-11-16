@@ -1,19 +1,19 @@
-Nov 14, 2019 5:37:03 PM LoggingSystem.LoggingSystem <init>
+Nov 16, 2019 1:33:02 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Nov 14, 2019 5:37:03 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerThu Nov 14 17:37:03 GMT 2019 New server instance.
-Nov 14, 2019 5:37:03 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerThu Nov 14 17:37:03 GMT 2019 main.Server successfully initialised.
-Nov 14, 2019 5:37:03 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerThu Nov 14 17:37:03 GMT 2019 Connecting to datastore...
-Nov 14, 2019 5:37:03 PM LoggingSystem.LoggingSystem <init>
+Nov 16, 2019 1:33:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerSat Nov 16 13:33:02 GMT 2019 New server instance.
+Nov 16, 2019 1:33:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerSat Nov 16 13:33:02 GMT 2019 main.Server successfully initialised.
+Nov 16, 2019 1:33:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerSat Nov 16 13:33:02 GMT 2019 Connecting to datastore...
+Nov 16, 2019 1:33:02 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Nov 14, 2019 5:37:03 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Nov 14 17:37:03 GMT 2019 Found datastore Directory.
-Nov 14, 2019 5:37:03 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Nov 14 17:37:03 GMT 2019 Running consistency check:
-Nov 14, 2019 5:37:03 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Nov 14 17:37:03 GMT 2019 
+Nov 16, 2019 1:33:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreSat Nov 16 13:33:02 GMT 2019 Found datastore Directory.
+Nov 16, 2019 1:33:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreSat Nov 16 13:33:02 GMT 2019 Running consistency check:
+Nov 16, 2019 1:33:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreSat Nov 16 13:33:02 GMT 2019 
 
 Consistency Report
  - Users table exists
@@ -22,69 +22,9 @@ Consistency Report
  - Staff table exists
  - Transport table exists
 
-Nov 14, 2019 5:37:03 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Nov 14 17:37:03 GMT 2019 Passed DB Consistency check.
-Nov 14, 2019 5:37:03 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Nov 14 17:37:03 GMT 2019 Connected to SQLite Database.
-Nov 14, 2019 5:37:06 PM LoggingSystem.LoggingSystem errorMessage
-SEVERE: main.ServerThu Nov 14 17:37:03 GMT 2019 java.net.SocketException: Socket closed
-Nov 14, 2019 5:37:07 PM LoggingSystem.LoggingSystem <init>
-INFO: Log Commenced
-Nov 14, 2019 5:37:07 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerThu Nov 14 17:37:07 GMT 2019 New server instance.
-Nov 14, 2019 5:37:07 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerThu Nov 14 17:37:07 GMT 2019 main.Server successfully initialised.
-Nov 14, 2019 5:37:07 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerThu Nov 14 17:37:07 GMT 2019 Connecting to datastore...
-Nov 14, 2019 5:37:07 PM LoggingSystem.LoggingSystem <init>
-INFO: Log Commenced
-Nov 14, 2019 5:37:07 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Nov 14 17:37:07 GMT 2019 Found datastore Directory.
-Nov 14, 2019 5:37:07 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Nov 14 17:37:07 GMT 2019 Running consistency check:
-Nov 14, 2019 5:37:07 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Nov 14 17:37:07 GMT 2019 
-
-Consistency Report
- - Users table exists
- - Events table exists
- - Assets table exists
- - Staff table exists
- - Transport table exists
-
-Nov 14, 2019 5:37:07 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Nov 14 17:37:07 GMT 2019 Passed DB Consistency check.
-Nov 14, 2019 5:37:07 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Nov 14 17:37:07 GMT 2019 Connected to SQLite Database.
-Nov 14, 2019 5:37:08 PM LoggingSystem.LoggingSystem errorMessage
-SEVERE: main.ServerThu Nov 14 17:37:07 GMT 2019 java.net.SocketException: Socket closed
-Nov 14, 2019 5:37:08 PM LoggingSystem.LoggingSystem <init>
-INFO: Log Commenced
-Nov 14, 2019 5:37:08 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerThu Nov 14 17:37:08 GMT 2019 New server instance.
-Nov 14, 2019 5:37:08 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerThu Nov 14 17:37:08 GMT 2019 main.Server successfully initialised.
-Nov 14, 2019 5:37:08 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerThu Nov 14 17:37:08 GMT 2019 Connecting to datastore...
-Nov 14, 2019 5:37:08 PM LoggingSystem.LoggingSystem <init>
-INFO: Log Commenced
-Nov 14, 2019 5:37:08 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Nov 14 17:37:08 GMT 2019 Found datastore Directory.
-Nov 14, 2019 5:37:08 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Nov 14 17:37:08 GMT 2019 Running consistency check:
-Nov 14, 2019 5:37:08 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Nov 14 17:37:08 GMT 2019 
-
-Consistency Report
- - Users table exists
- - Events table exists
- - Assets table exists
- - Staff table exists
- - Transport table exists
-
-Nov 14, 2019 5:37:08 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Nov 14 17:37:08 GMT 2019 Passed DB Consistency check.
-Nov 14, 2019 5:37:08 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Nov 14 17:37:08 GMT 2019 Connected to SQLite Database.
-Nov 14, 2019 5:37:09 PM LoggingSystem.LoggingSystem errorMessage
-SEVERE: main.ServerThu Nov 14 17:37:08 GMT 2019 java.net.SocketException: Socket closed
+Nov 16, 2019 1:33:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreSat Nov 16 13:33:02 GMT 2019 Passed DB Consistency check.
+Nov 16, 2019 1:33:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreSat Nov 16 13:33:02 GMT 2019 Connected to SQLite Database.
+Nov 16, 2019 1:34:11 PM LoggingSystem.LoggingSystem errorMessage
+SEVERE: main.ServerSat Nov 16 13:33:02 GMT 2019 java.net.SocketException: Socket closed

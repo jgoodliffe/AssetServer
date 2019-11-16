@@ -62,7 +62,7 @@ public class mainViewController implements Initializable {
      * Checks the port status and updates the status orb...
      * @param port - desired port number..
      */
-    private void checkPortStatus(int port) {
+    private boolean checkPortStatus(int port) {
         if(port>0 && port<=65535){
             System.out.println("--------------Testing port " + port);
             ServerSocket s = null;
@@ -74,10 +74,12 @@ public class mainViewController implements Initializable {
                 //System.out.println("--------------Port " + port + " is not available");
                 portStatusOrb.setFill(Color.LIMEGREEN);
                 portStatus.setText("Port "+port+ " is available!");
+                return true;
             } catch (IOException | IllegalArgumentException e) {
                 //System.out.println("--------------Port " + port + " is available");
                 portStatusOrb.setFill(Color.ORANGE);
                 portStatus.setText("Port "+port+" is unavailable: \n"+e.getMessage() );
+                return false;
             } finally {
                 if( s != null){
                     try {
@@ -87,11 +89,14 @@ public class mainViewController implements Initializable {
                         throw new RuntimeException("You should handle this error." , e);
                     }
                 }
+                return false;
             }
         }
         else{
+            System.out.println("Port out of range...");
             portStatusOrb.setFill(Color.CRIMSON);
             portStatus.setText("Port "+port+" is out of range!");
+            return false;
         }
     }
 
@@ -182,20 +187,19 @@ public class mainViewController implements Initializable {
     @FXML
     public void startClicked(MouseEvent mouseEvent) {
         try{
-            //logViewController.updateConsole("hello");
             System.out.println(portNumber.getText());
             if(portNumber.getText().equals("")){
-                server = new Server(port,this);
+                server = new Server(port,this,logViewController);
                 serverThread = new Thread(server);
                 serverThread.start();
                 return;
             } else{
                 port = Integer.parseInt(portNumber.getText());
-                server = new Server(port,this);
+                server = new Server(port,this,logViewController);
                 serverThread = new Thread(server);
                 serverThread.start();
             }
-        } catch(NumberFormatException e){
+        } catch(IllegalArgumentException e){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Port Number Invalid");
             alert.setHeaderText("Invalid Port Number Entered!");
@@ -215,6 +219,7 @@ public class mainViewController implements Initializable {
             pNum = Integer.parseInt(portNumber.getText());
             checkPortStatus(pNum);
         } catch(NumberFormatException e){
+            portStatusOrb.setFill(Color.CRIMSON);
             showAlert("Error - Port Number", e.getMessage());
         }
     }

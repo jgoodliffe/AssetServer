@@ -1,5 +1,6 @@
 package LoggingSystem;
 
+import GUI.LogViewController;
 import GUI.mainViewController;
 
 import java.io.File;
@@ -37,10 +38,11 @@ public class LoggingSystem {
         }
     }
 
-    public LoggingSystem(String tag, mainViewController vc){
+    public LoggingSystem(String tag, LogViewController vc){
         today = Calendar.getInstance().getTime();
         String today2 = Calendar.getInstance().toString();
         logName = tag+today.toString()+" ";
+        logger.addHandler(vc);
         try{
             new File(System.getProperty("user.dir")+"/Logs/").mkdirs();
             fh = new FileHandler(System.getProperty("user.dir")+"/Logs/logfile" + tag +"%u.txt");

@@ -47,6 +47,7 @@ public class ClientHandler implements Runnable{
             }
         }
         try{
+            System.out.println("CLOSING CLIENT");
             this.dos.close();
             this.dis.close();
         } catch (IOException e){
@@ -57,5 +58,11 @@ public class ClientHandler implements Runnable{
     public void stop(){
         runThread = false;
         System.out.println("Stopping communication thread.");
+        try{
+            s.close();
+            log.infoMessage("Closed client "+name);
+        } catch (IOException e){
+            log.errorMessage(e.getMessage());
+        }
     }
 }
