@@ -1,6 +1,8 @@
 package GUI;
 
 import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextArea;
@@ -15,7 +17,6 @@ public class LogViewController extends java.util.logging.Handler implements Init
     @FXML
     TextArea consoleOutput;
 
-
     public void updateConsole(String text){
         consoleOutput.setText(text);
     }
@@ -26,7 +27,13 @@ public class LogViewController extends java.util.logging.Handler implements Init
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        //consoleOutput.setText("Hello world...");
+        consoleOutput.setWrapText(true);
+        consoleOutput.textProperty().addListener(new ChangeListener<Object>() {
+            @Override
+            public void changed(ObservableValue<?> observable, Object oldValue, Object newValue) {
+                consoleOutput.setScrollTop(Double.MAX_VALUE);
+            }
+        });
     }
 
     @Override
@@ -41,6 +48,7 @@ public class LogViewController extends java.util.logging.Handler implements Init
                         record.getThreadID(), record.getSourceClassName(),
                         record.getSourceMethodName(), record.getMessage());
                 consoleOutput.setText(text.toString());
+                consoleOutput.positionCaret(text.toString().length());
             }
         });
     }

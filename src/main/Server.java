@@ -13,6 +13,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -79,16 +80,13 @@ public class Server extends Thread {
                 System.out.println("Added new client.");
                 new SendMessage(clients, this);
                 viewController.serverStarted();
-            } catch (Exception e){
-                e.printStackTrace();
-                log.errorMessage(e.toString());
+            } catch (IOException e){
+                if(e instanceof SocketException){
+                    log.infoMessage("Server socket closed: \n"+e.getMessage());
+                } else{
+                    log.errorMessage("Exception in server occurred: \n"+e.getMessage());
+                }
             }
-        }
-        try{
-            System.out.println("CLOSING SERVER");
-            serverSocket.close();
-        } catch (IOException e){
-            log.errorMessage(e.toString());
         }
     }
 
@@ -97,24 +95,30 @@ public class Server extends Thread {
     }
 
     public void stopServer(){
+        log.infoMessage("SERVER STOPPING....");
         ServerOn = false;
         viewController.serverStopping();
         viewController.updateStatus("Stopping server..");
         viewController.disableStop();
-        try{
-            for(int i=0; i< clients.size(); i++){
-                if(clients.get(i)==null){
-                    System.out.println("got a null client..");
-                } else{
-                    clients.get(i).stop();
-                    clients.remove(i);
-                }
+        for(int i=0; i< clients.size(); i++){
+            if(clients.get(i)==null){
+                System.out.println("got a null client..");
+            } else{
+                clients.get(i).stop();
+                clients.remove(i);
             }
+        }
+        try{
+            log.infoMessage("Closing Server Socket...");
             serverSocket.close();
             viewController.enableStart();
             viewController.serverStopped();
+            log.infoMessage("Stopped server.");
         } catch (IOException e){
-            viewController.showAlert("Error Stopping Server!", e.getMessage());
+            log.errorMessage(e.toString());
+            viewController.enableStart();
+            viewController.serverStopped();
+            log.errorMessage("Error stopping server!");
         }
     }
 

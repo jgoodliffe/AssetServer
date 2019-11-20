@@ -1,10 +1,44 @@
-Nov 16, 2019 1:41:43 PM LoggingSystem.LoggingSystem <init>
+Nov 17, 2019 5:18:52 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Nov 16, 2019 1:41:49 PM LoggingSystem.LoggingSystem errorMessage
-SEVERE: main.ClientHandler-Thread[Thread-5,5,main] - localhostSat Nov 16 13:41:43 GMT 2019 Client disconnected.
-Nov 16, 2019 1:41:49 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ClientHandler-Thread[Thread-5,5,main] - localhostSat Nov 16 13:41:43 GMT 2019 Closed client client 0
-Nov 16, 2019 1:41:49 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ClientHandler-Thread[Thread-5,5,main] - localhostSat Nov 16 13:41:43 GMT 2019 Closed client client 0
-Nov 16, 2019 1:41:49 PM LoggingSystem.LoggingSystem errorMessage
-SEVERE: main.ServerSat Nov 16 13:41:35 GMT 2019 java.net.SocketException: Socket closed
+Nov 17, 2019 5:19:01 PM LoggingSystem.LoggingSystem errorMessage
+SEVERE: main.ClientHandler-Thread[Thread-5,5,main] - localhostSun Nov 17 17:18:52 GMT 2019 Client disconnected.
+
+Nov 17, 2019 5:19:01 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ClientHandler-Thread[Thread-5,5,main] - localhostSun Nov 17 17:18:52 GMT 2019 Closed client client 0
+
+Nov 17, 2019 5:19:40 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Nov 17, 2019 5:19:40 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerSun Nov 17 17:19:40 GMT 2019 New server instance.
+
+Nov 17, 2019 5:19:40 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerSun Nov 17 17:19:40 GMT 2019 main.Server successfully initialised.
+
+Nov 17, 2019 5:19:40 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerSun Nov 17 17:19:40 GMT 2019 Connecting to datastore...
+
+Nov 17, 2019 5:19:40 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Nov 17, 2019 5:19:40 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreSun Nov 17 17:19:40 GMT 2019 Found datastore Directory.
+
+Nov 17, 2019 5:19:40 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreSun Nov 17 17:19:40 GMT 2019 Running consistency check:
+
+Nov 17, 2019 5:19:40 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreSun Nov 17 17:19:40 GMT 2019 
+
+Consistency Report
+ - Users table exists
+ - Events table exists
+ - Assets table exists
+ - Staff table exists
+ - Transport table exists
+
+
+Nov 17, 2019 5:19:40 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreSun Nov 17 17:19:40 GMT 2019 Passed DB Consistency check.
+
+Nov 17, 2019 5:19:40 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreSun Nov 17 17:19:40 GMT 2019 Connected to SQLite Database.
+

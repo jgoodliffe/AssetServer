@@ -1,0 +1,5 @@
+Nov 19, 2019 9:16:06 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Nov 19, 2019 9:16:06 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Nov 19 21:16:06 GMT 2019 New server instance.
+

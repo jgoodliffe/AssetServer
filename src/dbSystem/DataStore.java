@@ -225,14 +225,25 @@ public class DataStore {
 
     /**
      * Returns relative path of working directory
-     * @param dbpath full path
+     * @param dbPath full path
      * @return the relative path
      */
-    private String getRelativePath(String dbpath){
+    private String getRelativePath(String dbPath){
         String relPath = "";
-        String main[] = dbpath.split("/");
+        String main[] = dbPath.split("/");
         relPath = main[main.length-1]+"/";
         //log.infoMessage(relPath);
         return relPath;
+    }
+
+    private void resetDatabase(){
+        String currentDir = System.getProperty("user.dir");
+        String dataStoreDir = currentDir + "/Data";
+        Path path = Paths.get(dataStoreDir);
+        if(!Files.exists(path)){
+            //Database does not exist
+        } else{
+            //Database exists
+        }
     }
 }

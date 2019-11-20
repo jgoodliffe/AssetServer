@@ -57,12 +57,12 @@ public class LoggingSystem {
 
     public void errorMessage(String message){
         if(logger!=null){
-            logger.severe(logName+message);
+            logger.severe(logName+message + "\n");
         }
     }
     public void infoMessage(String message){
         if(logger!=null){
-            logger.info(logName+message);
+            logger.info(logName+message+"\n");
             //logger.get
         }
     }

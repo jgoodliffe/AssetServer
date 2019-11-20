@@ -108,14 +108,19 @@ public class mainViewController implements Initializable {
     
 
     public void updateColour(Color color){
-        statusOrb.setFill(color);
-        if(statusOrb.getFill().equals(Color.CRIMSON)){
-            statusLabel.setText("Starting Server");
-        } else if(statusOrb.getFill().equals(Color.GOLD)){
-            statusLabel.setText("Server Stopped");
-        } else if(statusOrb.getFill().equals(Color.LIMEGREEN)){
-            statusLabel.setText("Server Running");
-        }
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                statusOrb.setFill(color);
+                if(statusOrb.getFill().equals(Color.CRIMSON)){
+                    statusLabel.setText("Not Running");
+                } else if(statusOrb.getFill().equals(Color.GOLD)){
+                    statusLabel.setText("Starting...");
+                } else if(statusOrb.getFill().equals(Color.LIMEGREEN)){
+                    statusLabel.setText("Running....");
+                }
+            }
+        });
     }
 
 
@@ -180,6 +185,7 @@ public class mainViewController implements Initializable {
     @FXML
     public void stopClicked(MouseEvent mouseEvent) {
         if(server.isServerOn()){
+            //System.out.println("Stopping server button pressed.");
             server.stopServer();
         }
     }
@@ -233,6 +239,16 @@ public class mainViewController implements Initializable {
                 checkPortStatus(pNum);
             } catch(NumberFormatException e){
             }
+        }
+    }
+
+    /**
+     * When application quits...
+     */
+    public void dispose() {
+        if(server.isServerOn()){
+            //System.out.println("Stopping server button pressed.");
+            server.stopServer();
         }
     }
 }
