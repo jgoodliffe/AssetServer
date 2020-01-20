@@ -4,9 +4,7 @@ import GUI.LogViewController;
 import GUI.mainViewController;
 import LoggingSystem.LoggingSystem;
 import dbSystem.DataStore;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.scene.paint.Color;
+import servlets.PersonServlet;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -23,6 +21,7 @@ import java.util.List;
  */
 public class Server extends Thread {
     private ServerSocket serverSocket;
+    private PersonServlet http;
     private mainViewController viewController;
     private LogViewController consoleViewController;
     private LoggingSystem log;
@@ -45,6 +44,7 @@ public class Server extends Thread {
         log.infoMessage("New server instance.");
         try{
             this.serverSocket = new ServerSocket(port);
+            this.http = new PersonServlet();
             log.infoMessage("main.Server successfully initialised.");
             clients = Collections.synchronizedList(new ArrayList<>());
             ServerOn = true;

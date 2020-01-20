@@ -1,0 +1,46 @@
+Jan 16, 2020 11:54:08 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Jan 16, 2020 11:54:34 PM LoggingSystem.LoggingSystem errorMessage
+SEVERE: main.ClientHandler-Thread[Thread-5,5,main] - localhostThu Jan 16 23:54:08 ICT 2020 Client disconnected.
+
+Jan 16, 2020 11:54:34 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ClientHandler-Thread[Thread-5,5,main] - localhostThu Jan 16 23:54:08 ICT 2020 Closed client client 2
+
+Jan 16, 2020 11:55:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerThu Jan 16 23:46:07 ICT 2020 localhost Connected
+
+Jan 16, 2020 11:55:53 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Jan 16, 2020 11:57:00 PM LoggingSystem.LoggingSystem errorMessage
+SEVERE: main.ClientHandler-Thread[Thread-5,5,main] - localhostThu Jan 16 23:55:53 ICT 2020 Client disconnected.
+
+Jan 16, 2020 11:57:00 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ClientHandler-Thread[Thread-5,5,main] - localhostThu Jan 16 23:55:53 ICT 2020 Closed client client 3
+
+Jan 16, 2020 11:57:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerThu Jan 16 23:46:07 ICT 2020 localhost Connected
+
+Jan 16, 2020 11:57:02 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Jan 16, 2020 11:57:20 PM LoggingSystem.LoggingSystem errorMessage
+SEVERE: main.ClientHandler-Thread[Thread-5,5,main] - localhostThu Jan 16 23:57:02 ICT 2020 Client disconnected.
+
+Jan 16, 2020 11:57:20 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ClientHandler-Thread[Thread-5,5,main] - localhostThu Jan 16 23:57:02 ICT 2020 Closed client client 4
+
+Jan 16, 2020 11:58:43 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerThu Jan 16 23:46:07 ICT 2020 SERVER STOPPING....
+
+Jan 16, 2020 11:58:43 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ClientHandler-Thread[Thread-5,5,main] - localhostThu Jan 16 23:46:18 ICT 2020 Closed client client 0
+
+Jan 16, 2020 11:58:43 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerThu Jan 16 23:46:07 ICT 2020 Closing Server Socket...
+
+Jan 16, 2020 11:58:43 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerThu Jan 16 23:46:07 ICT 2020 Stopped server.
+
+Jan 16, 2020 11:58:43 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerThu Jan 16 23:46:07 ICT 2020 Server socket closed: 
+Socket closed
+

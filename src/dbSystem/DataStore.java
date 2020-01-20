@@ -18,6 +18,11 @@ public class DataStore {
     private DatabaseMetaData meta;
     private LoggingSystem log;
 
+    private static DataStore instance = new DataStore();
+    public static DataStore getInstance(){
+        return instance;
+    }
+
     /**
      * Constructor
      */
@@ -43,6 +48,33 @@ public class DataStore {
             return connection == null||connection.isValid(3);
         } catch (SQLException e) {
             return false;
+        }
+    }
+
+    /**
+     * Edits the User table - Prepared Statement
+     * @param newUser - is this a new user?
+     * @param userLevel - authLevel (0 by default)
+     * @param name - Name
+     * @param firstLine - addr
+     * @param postCode - postcode
+     * @param email - email
+     * @param phone - phone
+     * @param company - employer
+     * @param role - role at employer
+     * @param notes - notes
+     */
+    public void editUsersTable(boolean newUser, int userLevel, String name, String firstLine, String postCode, String email, String phone, String company, String role, String notes){
+        //Check if a new user or not
+        if(newUser){
+            String sql = "INSERT INTO ";
+            try{
+                PreparedStatement psmt = conn.prepareStatement(sql)){
+
+                }
+            }
+        } else{
+
         }
     }
 
