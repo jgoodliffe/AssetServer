@@ -1,13 +1,13 @@
-Nov 19, 2019 9:13:22 PM LoggingSystem.LoggingSystem <init>
+Dec 24, 2019 2:28:15 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Nov 19, 2019 9:13:22 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:22 GMT 2019 Found datastore Directory.
+Dec 24, 2019 2:28:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:15 GMT 2019 Found datastore Directory.
 
-Nov 19, 2019 9:13:22 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:22 GMT 2019 Running consistency check:
+Dec 24, 2019 2:28:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:15 GMT 2019 Running consistency check:
 
-Nov 19, 2019 9:13:22 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:22 GMT 2019 
+Dec 24, 2019 2:28:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:15 GMT 2019 
 
 Consistency Report
  - Users table exists
@@ -17,46 +17,46 @@ Consistency Report
  - Transport table exists
 
 
-Nov 19, 2019 9:13:22 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:22 GMT 2019 Passed DB Consistency check.
+Dec 24, 2019 2:28:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:15 GMT 2019 Passed DB Consistency check.
 
-Nov 19, 2019 9:13:22 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:22 GMT 2019 Connected to SQLite Database.
+Dec 24, 2019 2:28:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:15 GMT 2019 Connected to SQLite Database.
 
-Nov 19, 2019 9:13:23 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:22 GMT 2019 SERVER STOPPING....
+Dec 24, 2019 2:28:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:14 GMT 2019 SERVER STOPPING....
 
-Nov 19, 2019 9:13:23 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:22 GMT 2019 Closing Server Socket...
+Dec 24, 2019 2:28:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:14 GMT 2019 Closing Server Socket...
 
-Nov 19, 2019 9:13:23 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:22 GMT 2019 Server socket closed: 
+Dec 24, 2019 2:28:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:14 GMT 2019 Stopped server.
+
+Dec 24, 2019 2:28:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:14 GMT 2019 Server socket closed: 
 Socket closed
 
-Nov 19, 2019 9:13:23 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:22 GMT 2019 Stopped server.
-
-Nov 19, 2019 9:13:24 PM LoggingSystem.LoggingSystem <init>
+Dec 24, 2019 2:28:17 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Nov 19, 2019 9:13:24 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:24 GMT 2019 New server instance.
+Dec 24, 2019 2:28:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:17 GMT 2019 New server instance.
 
-Nov 19, 2019 9:13:24 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:24 GMT 2019 main.Server successfully initialised.
+Dec 24, 2019 2:28:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:17 GMT 2019 main.Server successfully initialised.
 
-Nov 19, 2019 9:13:24 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:24 GMT 2019 Connecting to datastore...
+Dec 24, 2019 2:28:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:17 GMT 2019 Connecting to datastore...
 
-Nov 19, 2019 9:13:24 PM LoggingSystem.LoggingSystem <init>
+Dec 24, 2019 2:28:17 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Nov 19, 2019 9:13:24 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:24 GMT 2019 Found datastore Directory.
+Dec 24, 2019 2:28:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:17 GMT 2019 Found datastore Directory.
 
-Nov 19, 2019 9:13:24 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:24 GMT 2019 Running consistency check:
+Dec 24, 2019 2:28:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:17 GMT 2019 Running consistency check:
 
-Nov 19, 2019 9:13:24 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:24 GMT 2019 
+Dec 24, 2019 2:28:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:17 GMT 2019 
 
 Consistency Report
  - Users table exists
@@ -66,46 +66,46 @@ Consistency Report
  - Transport table exists
 
 
-Nov 19, 2019 9:13:24 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:24 GMT 2019 Passed DB Consistency check.
+Dec 24, 2019 2:28:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:17 GMT 2019 Passed DB Consistency check.
 
-Nov 19, 2019 9:13:24 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:24 GMT 2019 Connected to SQLite Database.
+Dec 24, 2019 2:28:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:17 GMT 2019 Connected to SQLite Database.
 
-Nov 19, 2019 9:13:25 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:24 GMT 2019 SERVER STOPPING....
+Dec 24, 2019 2:28:18 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:17 GMT 2019 SERVER STOPPING....
 
-Nov 19, 2019 9:13:25 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:24 GMT 2019 Closing Server Socket...
+Dec 24, 2019 2:28:18 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:17 GMT 2019 Closing Server Socket...
 
-Nov 19, 2019 9:13:25 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:24 GMT 2019 Stopped server.
+Dec 24, 2019 2:28:18 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:17 GMT 2019 Stopped server.
 
-Nov 19, 2019 9:13:25 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:24 GMT 2019 Server socket closed: 
+Dec 24, 2019 2:28:18 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:17 GMT 2019 Server socket closed: 
 Socket closed
 
-Nov 19, 2019 9:13:26 PM LoggingSystem.LoggingSystem <init>
+Dec 24, 2019 2:28:21 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Nov 19, 2019 9:13:26 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:26 GMT 2019 New server instance.
+Dec 24, 2019 2:28:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:21 GMT 2019 New server instance.
 
-Nov 19, 2019 9:13:26 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:26 GMT 2019 main.Server successfully initialised.
+Dec 24, 2019 2:28:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:21 GMT 2019 main.Server successfully initialised.
 
-Nov 19, 2019 9:13:26 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:26 GMT 2019 Connecting to datastore...
+Dec 24, 2019 2:28:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:21 GMT 2019 Connecting to datastore...
 
-Nov 19, 2019 9:13:26 PM LoggingSystem.LoggingSystem <init>
+Dec 24, 2019 2:28:21 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Nov 19, 2019 9:13:26 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:26 GMT 2019 Found datastore Directory.
+Dec 24, 2019 2:28:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:21 GMT 2019 Found datastore Directory.
 
-Nov 19, 2019 9:13:26 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:26 GMT 2019 Running consistency check:
+Dec 24, 2019 2:28:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:21 GMT 2019 Running consistency check:
 
-Nov 19, 2019 9:13:26 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:26 GMT 2019 
+Dec 24, 2019 2:28:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:21 GMT 2019 
 
 Consistency Report
  - Users table exists
@@ -115,46 +115,46 @@ Consistency Report
  - Transport table exists
 
 
-Nov 19, 2019 9:13:26 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:26 GMT 2019 Passed DB Consistency check.
+Dec 24, 2019 2:28:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:21 GMT 2019 Passed DB Consistency check.
 
-Nov 19, 2019 9:13:26 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:26 GMT 2019 Connected to SQLite Database.
+Dec 24, 2019 2:28:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:21 GMT 2019 Connected to SQLite Database.
 
-Nov 19, 2019 9:13:27 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:26 GMT 2019 SERVER STOPPING....
+Dec 24, 2019 2:28:23 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:21 GMT 2019 SERVER STOPPING....
 
-Nov 19, 2019 9:13:27 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:26 GMT 2019 Closing Server Socket...
+Dec 24, 2019 2:28:23 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:21 GMT 2019 Closing Server Socket...
 
-Nov 19, 2019 9:13:27 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:26 GMT 2019 Stopped server.
+Dec 24, 2019 2:28:23 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:21 GMT 2019 Stopped server.
 
-Nov 19, 2019 9:13:27 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:26 GMT 2019 Server socket closed: 
+Dec 24, 2019 2:28:23 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:21 GMT 2019 Server socket closed: 
 Socket closed
 
-Nov 19, 2019 9:13:28 PM LoggingSystem.LoggingSystem <init>
+Dec 24, 2019 2:28:24 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Nov 19, 2019 9:13:28 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:28 GMT 2019 New server instance.
+Dec 24, 2019 2:28:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:24 GMT 2019 New server instance.
 
-Nov 19, 2019 9:13:28 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:28 GMT 2019 main.Server successfully initialised.
+Dec 24, 2019 2:28:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:24 GMT 2019 main.Server successfully initialised.
 
-Nov 19, 2019 9:13:28 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:28 GMT 2019 Connecting to datastore...
+Dec 24, 2019 2:28:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:24 GMT 2019 Connecting to datastore...
 
-Nov 19, 2019 9:13:28 PM LoggingSystem.LoggingSystem <init>
+Dec 24, 2019 2:28:24 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Nov 19, 2019 9:13:28 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:28 GMT 2019 Found datastore Directory.
+Dec 24, 2019 2:28:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:24 GMT 2019 Found datastore Directory.
 
-Nov 19, 2019 9:13:28 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:28 GMT 2019 Running consistency check:
+Dec 24, 2019 2:28:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:24 GMT 2019 Running consistency check:
 
-Nov 19, 2019 9:13:28 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:28 GMT 2019 
+Dec 24, 2019 2:28:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:24 GMT 2019 
 
 Consistency Report
  - Users table exists
@@ -164,174 +164,22 @@ Consistency Report
  - Transport table exists
 
 
-Nov 19, 2019 9:13:28 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:28 GMT 2019 Passed DB Consistency check.
+Dec 24, 2019 2:28:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:24 GMT 2019 Passed DB Consistency check.
 
-Nov 19, 2019 9:13:28 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:28 GMT 2019 Connected to SQLite Database.
+Dec 24, 2019 2:28:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Dec 24 14:28:24 GMT 2019 Connected to SQLite Database.
 
-Nov 19, 2019 9:13:30 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:28 GMT 2019 SERVER STOPPING....
+Dec 24, 2019 2:28:25 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:24 GMT 2019 SERVER STOPPING....
 
-Nov 19, 2019 9:13:30 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:28 GMT 2019 Closing Server Socket...
+Dec 24, 2019 2:28:25 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:24 GMT 2019 Closing Server Socket...
 
-Nov 19, 2019 9:13:30 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:28 GMT 2019 Stopped server.
+Dec 24, 2019 2:28:25 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:24 GMT 2019 Stopped server.
 
-Nov 19, 2019 9:13:30 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:28 GMT 2019 Server socket closed: 
+Dec 24, 2019 2:28:25 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Dec 24 14:28:24 GMT 2019 Server socket closed: 
 Socket closed
-
-Nov 19, 2019 9:13:31 PM LoggingSystem.LoggingSystem <init>
-INFO: Log Commenced
-Nov 19, 2019 9:13:31 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:31 GMT 2019 New server instance.
-
-Nov 19, 2019 9:13:31 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:31 GMT 2019 main.Server successfully initialised.
-
-Nov 19, 2019 9:13:31 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:31 GMT 2019 Connecting to datastore...
-
-Nov 19, 2019 9:13:31 PM LoggingSystem.LoggingSystem <init>
-INFO: Log Commenced
-Nov 19, 2019 9:13:31 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:31 GMT 2019 Found datastore Directory.
-
-Nov 19, 2019 9:13:31 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:31 GMT 2019 Running consistency check:
-
-Nov 19, 2019 9:13:31 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:31 GMT 2019 
-
-Consistency Report
- - Users table exists
- - Events table exists
- - Assets table exists
- - Staff table exists
- - Transport table exists
-
-
-Nov 19, 2019 9:13:31 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:31 GMT 2019 Passed DB Consistency check.
-
-Nov 19, 2019 9:13:31 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:31 GMT 2019 Connected to SQLite Database.
-
-Nov 19, 2019 9:13:32 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:31 GMT 2019 SERVER STOPPING....
-
-Nov 19, 2019 9:13:32 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:31 GMT 2019 Closing Server Socket...
-
-Nov 19, 2019 9:13:32 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:31 GMT 2019 Stopped server.
-
-Nov 19, 2019 9:13:32 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:31 GMT 2019 Server socket closed: 
-Socket closed
-
-Nov 19, 2019 9:13:33 PM LoggingSystem.LoggingSystem <init>
-INFO: Log Commenced
-Nov 19, 2019 9:13:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:33 GMT 2019 New server instance.
-
-Nov 19, 2019 9:13:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:33 GMT 2019 main.Server successfully initialised.
-
-Nov 19, 2019 9:13:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:33 GMT 2019 Connecting to datastore...
-
-Nov 19, 2019 9:13:33 PM LoggingSystem.LoggingSystem <init>
-INFO: Log Commenced
-Nov 19, 2019 9:13:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:33 GMT 2019 Found datastore Directory.
-
-Nov 19, 2019 9:13:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:33 GMT 2019 Running consistency check:
-
-Nov 19, 2019 9:13:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:33 GMT 2019 
-
-Consistency Report
- - Users table exists
- - Events table exists
- - Assets table exists
- - Staff table exists
- - Transport table exists
-
-
-Nov 19, 2019 9:13:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:33 GMT 2019 Passed DB Consistency check.
-
-Nov 19, 2019 9:13:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:33 GMT 2019 Connected to SQLite Database.
-
-Nov 19, 2019 9:13:43 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:33 GMT 2019 SERVER STOPPING....
-
-Nov 19, 2019 9:13:43 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:33 GMT 2019 Closing Server Socket...
-
-Nov 19, 2019 9:13:43 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:33 GMT 2019 Stopped server.
-
-Nov 19, 2019 9:13:43 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:33 GMT 2019 Server socket closed: 
-Socket closed
-
-Nov 19, 2019 9:13:44 PM LoggingSystem.LoggingSystem <init>
-INFO: Log Commenced
-Nov 19, 2019 9:13:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:44 GMT 2019 New server instance.
-
-Nov 19, 2019 9:13:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:44 GMT 2019 main.Server successfully initialised.
-
-Nov 19, 2019 9:13:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:44 GMT 2019 Connecting to datastore...
-
-Nov 19, 2019 9:13:44 PM LoggingSystem.LoggingSystem <init>
-INFO: Log Commenced
-Nov 19, 2019 9:13:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:44 GMT 2019 Found datastore Directory.
-
-Nov 19, 2019 9:13:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:44 GMT 2019 Running consistency check:
-
-Nov 19, 2019 9:13:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:44 GMT 2019 
-
-Consistency Report
- - Users table exists
- - Events table exists
- - Assets table exists
- - Staff table exists
- - Transport table exists
-
-
-Nov 19, 2019 9:13:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:44 GMT 2019 Passed DB Consistency check.
-
-Nov 19, 2019 9:13:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreTue Nov 19 21:13:44 GMT 2019 Connected to SQLite Database.
-
-Nov 19, 2019 9:13:45 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:44 GMT 2019 SERVER STOPPING....
-
-Nov 19, 2019 9:13:45 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:44 GMT 2019 Closing Server Socket...
-
-Nov 19, 2019 9:13:45 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:44 GMT 2019 Stopped server.
-
-Nov 19, 2019 9:13:45 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:13:44 GMT 2019 Server socket closed: 
-Socket closed
-
-Nov 19, 2019 9:16:06 PM LoggingSystem.LoggingSystem <init>
-INFO: Log Commenced
-Nov 19, 2019 9:16:06 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerTue Nov 19 21:16:06 GMT 2019 New server instance.
 

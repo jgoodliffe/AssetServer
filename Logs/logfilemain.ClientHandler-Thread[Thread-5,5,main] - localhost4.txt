@@ -1,0 +1,24 @@
+Jan 16, 2020 11:57:02 PM LoggingSystem.LoggingSystem <init>
+INFO: Log Commenced
+Jan 16, 2020 11:57:20 PM LoggingSystem.LoggingSystem errorMessage
+SEVERE: main.ClientHandler-Thread[Thread-5,5,main] - localhostThu Jan 16 23:57:02 ICT 2020 Client disconnected.
+
+Jan 16, 2020 11:57:20 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ClientHandler-Thread[Thread-5,5,main] - localhostThu Jan 16 23:57:02 ICT 2020 Closed client client 4
+
+Jan 16, 2020 11:58:43 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerThu Jan 16 23:46:07 ICT 2020 SERVER STOPPING....
+
+Jan 16, 2020 11:58:43 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ClientHandler-Thread[Thread-5,5,main] - localhostThu Jan 16 23:46:18 ICT 2020 Closed client client 0
+
+Jan 16, 2020 11:58:43 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerThu Jan 16 23:46:07 ICT 2020 Closing Server Socket...
+
+Jan 16, 2020 11:58:43 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerThu Jan 16 23:46:07 ICT 2020 Stopped server.
+
+Jan 16, 2020 11:58:43 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerThu Jan 16 23:46:07 ICT 2020 Server socket closed: 
+Socket closed
+

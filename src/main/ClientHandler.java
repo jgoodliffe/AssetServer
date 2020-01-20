@@ -2,6 +2,7 @@ package main;
 
 import LoggingSystem.LoggingSystem;
 import dbSystem.DataStore;
+import org.json.JSONArray;
 
 import java.io.*;
 import java.net.Socket;
@@ -35,6 +36,7 @@ public class ClientHandler implements Runnable{
             try{
                 String clientMessage = dis.readUTF();
                 System.out.println(s.getInetAddress().getHostName()+" says: "+clientMessage);
+                JSONArray array = jParse.stringToArray(clientMessage);
 
                 if(!svr.ServerOn) {
                     log.infoMessage("main.Server already stopped");
