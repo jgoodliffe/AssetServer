@@ -5,18 +5,19 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
 
 import LoggingSystem.LoggingSystem;
 
+
 /**
- * Connection to SQLite Database
+ * Handles Connection to SQLite Database
+ * Only initialising and cleanup functions are held here.
  */
 public class DataStore {
     private static Connection conn;
     private DatabaseMetaData meta;
     private LoggingSystem log;
+    private SQLQueries sqlQueries;
 
     private static DataStore instance = new DataStore();
     public static DataStore getInstance(){
@@ -29,6 +30,7 @@ public class DataStore {
     public DataStore(){
         log = new LoggingSystem(this.getClass().getCanonicalName());
         init();
+        this.sqlQueries = new SQLQueries(this, conn);
     }
 
     /**
@@ -51,45 +53,45 @@ public class DataStore {
         }
     }
 
-    /**
-     * Edits the User table - Prepared Statement
-     * @param newUser - is this a new user?
-     * @param userLevel - authLevel (0 by default)
-     * @param name - Name
-     * @param firstLine - addr
-     * @param postCode - postcode
-     * @param email - email
-     * @param phone - phone
-     * @param company - employer
-     * @param role - role at employer
-     * @param notes - notes
-     */
-    public void editUsersTable(boolean newUser, int userLevel, String name, String firstLine, String postCode, String email, String phone, String company, String role, String notes){
-        //Check if a new user or not
-        if(newUser){
-            String sql = "INSERT INTO ";
-            try{
-                PreparedStatement psmt = conn.prepareStatement(sql)){
-
-                }
-            }
-        } else{
-
-        }
+    public SQLQueries getSqlQueries(){
+        return sqlQueries;
     }
 
-    private boolean createTable(String tableName){
-        // SQL statement for creating a new table
+
+    /**
+     * createTableWithParameters
+     * @param tableName - name of the table to be created
+     * @param parameters - [column name, data type]
+     * @return
+     */
+    private boolean createTableWithParameters(String tableName, String[][] parameters){
         if(tableName.equals("")|tableName==null){
             return false;
         }
-        String sql = "CREATE TABLE IF NOT EXISTS "+ tableName +"(\n"
+
+        String sql = "";
+        sql += "CREATE TABLE IF NOT EXISTS "+ tableName +"(";
+
+        /*sql+"(\n"
                 + "    id integer PRIMARY KEY,\n"
                 + "    name text NOT NULL,\n"
                 + "    quantity real\n"
                 + ");";
+         */
+
+        for(int i=0; i<parameters.length;i++){
+            for(int j=0; j<parameters[i].length; j++){
+                sql+= parameters[i][j] + " ";
+            }
+            if(!(i ==parameters.length-1)){
+                sql+= ", ";
+            }
+        }
+        sql+=");";
+
         try{
             Statement stmt = conn.createStatement();
+            //System.out.println(sql);
             stmt.execute(sql);
             return true;
         } catch (SQLException e){
@@ -102,25 +104,52 @@ public class DataStore {
     /**
      * Setup new database.
      */
+    //TODO Cleanup
     private boolean newDatabaseSetup(){
         log.infoMessage("Running new DB Setup: ");
-        String[] tables = {"Users", "Events", "Assets", "Staff", "Transport"};
         String logoutput = "\n\n";
-        for(int i=0; i<tables.length; i++){
-            if(!tableExists(tables[i])){
-                logoutput+="\n Creating table "+tables[i];
-                if(createTable(tables[i])){
-                    logoutput+="\n Created table "+tables[i];
-                } else{
-                    logoutput+="\n Unable to create table "+tables[i];
-                    return false;
-                }
-            } else{
-                logoutput+="\n "+tables[i] +" exists. Not creating.";
-            }
+
+        if(!newDBSetupSQLStatement()){
+            logoutput+= "\nFailed to create new DB.";
+            log.infoMessage(logoutput+"\n");
+            return false;
         }
         logoutput+= "\nSuccessfully created DB.";
         log.infoMessage(logoutput+"\n");
+        return true;
+    }
+
+
+    /**
+     * SQL Statement creator - For initialising the columns of the Database Tables
+     * @return
+     */
+    //TODO Events and Users tables need relational values adding
+    private boolean newDBSetupSQLStatement(){
+        //String statement="";
+        String[] id = {"id", "INTEGER PRIMARY KEY AUTOINCREMENT"}; String[] uid = {"uid", "INTEGER"};
+        String[] name = {"name", "TEXT"};
+        String[] type = {"type", "TEXT"}; String[] category = {"category", "TEXT"};
+        String[] quant = {"quantity", "INTEGER"};
+        String[] ulevel = {"userlevel", "INTEGER NOT NULL"}; String[] username = {"username", "TEXT NOT NULL"}; String[] password = {"password", "TEXT NOT NULL"}; String[] authToken = {"authToken", "BLOB"};
+        String[] startDate = {"startDate", "TEXT"}; String[] endDate = {"endDate", "TEXT"};
+        String[] firstName = {"firstName", "TEXT"}; String[] lastName = {"lastName", "TEXT"};
+        String[] firstLine = {"firstLine", "TEXT"}; String[] postCode = {"postCode", "TEXT"}; String[] tel = {"telephone", "TEXT"}; String[] email = {"email", "TEXT"};
+        String[] company = {"company", "TEXT"}; String[] role = {"role", "TEXT"}; String[] notes = {"notes", "TEXT"};
+        String[][] transport = {id,name,type,quant};
+        String[][] users = {id, ulevel, username,password};
+        String[][] events = {id, name, startDate, endDate};
+        String[][] assets = {id, name, category, quant};
+        String[][] people = {id, uid, firstName, lastName, firstLine, postCode, tel, email, company, role, notes};
+        String[][][] tables = {users, events, assets, people, transport};
+        String[] tableNames = {"users", "events", "assets", "people", "transport"};
+
+        for(int i=0; i<tables.length; i++){
+            if(!createTableWithParameters(tableNames[i], tables[i])){
+                return false;
+            }
+        }
+
         return true;
     }
 
@@ -132,7 +161,7 @@ public class DataStore {
         log.infoMessage("Running consistency check:");
         String logoutput = "\n\nConsistency Report";
         String[][] statuses = {
-                {"Users", "Events", "Assets", "Staff", "Transport"},
+                {"users", "events", "assets", "people", "transport"},
                 {"false", "false", "false", "false", "false"}
         };
 
@@ -157,8 +186,9 @@ public class DataStore {
 
     /**
      * Checks if table exists
-     * @param tableName - name of table
+     * @param tableName - name of table\
      */
+    //TODO: Add schema check.
     private boolean tableExists(String tableName){
         if(getConnStatus(conn)){
             try{

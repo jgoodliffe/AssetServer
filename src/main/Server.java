@@ -4,6 +4,7 @@ import GUI.LogViewController;
 import GUI.mainViewController;
 import LoggingSystem.LoggingSystem;
 import dbSystem.DataStore;
+import org.eclipse.jetty.servlet.ServletContextHandler;
 import servlets.PersonServlet;
 
 import java.io.DataInputStream;
@@ -25,6 +26,8 @@ public class Server extends Thread {
     private mainViewController viewController;
     private LogViewController consoleViewController;
     private LoggingSystem log;
+    private org.eclipse.jetty.server.Server jettyServer;
+    private ServletContextHandler jettyContextHandler;
     volatile boolean ServerOn;
     DataStore mainStore;
     static protected List<ClientHandler> clients;
@@ -50,6 +53,9 @@ public class Server extends Thread {
             ServerOn = true;
             log.infoMessage("Connecting to datastore...");
             mainStore = new DataStore();
+            jettyServer = new org.eclipse.jetty.server.Server(8080);
+            jettyContextHandler = new ServletContextHandler(jettyServer, "/person");
+            jettyContextHandler.addServlet(servlets.PersonServlet.class, "/");
             //this.run();
         } catch (IOException e) {
             viewController.showAlert("Error initialising server", e.getMessage());
@@ -67,6 +73,7 @@ public class Server extends Thread {
             viewController.enableStop();
             viewController.updateStatus("Waiting for clients...");
             try{
+                jettyServer.start();
                 Socket client = serverSocket.accept();
                 log.infoMessage(client.getInetAddress().getHostName() + " Connected");
                 DataInputStream dis = new DataInputStream(client.getInputStream());
@@ -80,7 +87,7 @@ public class Server extends Thread {
                 System.out.println("Added new client.");
                 new SendMessage(clients, this);
                 viewController.serverStarted();
-            } catch (IOException e){
+            } catch (Exception e){
                 if(e instanceof SocketException){
                     log.infoMessage("Server socket closed: \n"+e.getMessage());
                 } else{
