@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.mainViewController">
+   <children>
+      <VBox maxHeight="600.0" maxWidth="400.0" minHeight="600.0" minWidth="400.0" prefHeight="600.0" prefWidth="400.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="51.0" prefWidth="400.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Asset Manager Server" textAlignment="CENTER" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label text="Console Output" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <fx:include fx:id="logView" source="consoleView.fxml" VBox.vgrow="ALWAYS" />
+            <HBox prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button fx:id="btn_start" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#startClicked" prefHeight="40.0" prefWidth="140.0" text="Start Server" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btn_stop" disable="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#stopClicked" prefHeight="40.0" prefWidth="140.0" text="Stop Server" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="50.0">
+               <children>
+                  <Label text="Port Number" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" right="30.0" top="6.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="portNumber" onAction="#onEnter" onKeyPressed="#handleOnKeyPressed" promptText="10000" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Group nodeOrientation="LEFT_TO_RIGHT" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Circle fx:id="statusOrb" fill="DODGERBLUE" layoutY="8.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                        <Label fx:id="statusLabel" layoutX="14.0" text="Status" textFill="WHITE" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Group>
+                  <Group nodeOrientation="LEFT_TO_RIGHT" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Circle fx:id="portStatusOrb" fill="DODGERBLUE" layoutY="8.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                        <Label layoutX="14.0" text="Port Access" textFill="WHITE" />
+                     </children>
+                  </Group>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
