@@ -32,13 +32,15 @@ public class Server extends Thread {
     DataStore mainStore;
     static protected List<ClientHandler> clients;
     private int port;
+    private boolean isRunningOnCLI;
     static int i = 0;
 
     /**
-     * Constructor - Initalises server & Starts thread...
+     * Constructor for GUI- Initalises server & Starts thread..
      *
      */
     public Server(int port, mainViewController viewController, LogViewController consoleViewController){
+        isRunningOnCLI = false;
         this.viewController = viewController;
         this.port = port;
         this.consoleViewController = consoleViewController;
@@ -65,13 +67,50 @@ public class Server extends Thread {
     }
 
     /**
+     * Constructor for no-GUI
+     * @param port - Port number
+     */
+    public Server(int port){
+        this.port = port;
+        isRunningOnCLI = true;
+        if(isRunningOnCLI){
+            log = new LoggingSystem(this.getClass().getCanonicalName());
+        } else{
+            viewController.serverStarting();
+            log = new LoggingSystem(this.getClass().getCanonicalName(),consoleViewController);
+        }
+        log.infoMessage("New server instance.");
+        try{
+            this.serverSocket = new ServerSocket(port);
+            this.http = new PersonServlet();
+            log.infoMessage("main.Server successfully initialised.");
+            clients = Collections.synchronizedList(new ArrayList<>());
+            ServerOn = true;
+            log.infoMessage("Connecting to datastore...");
+            mainStore = new DataStore();
+            jettyServer = new org.eclipse.jetty.server.Server(8080);
+            jettyContextHandler = new ServletContextHandler(jettyServer, "/person");
+            jettyContextHandler.addServlet(servlets.PersonServlet.class, "/");
+            //this.run();
+        } catch (IOException e) {
+            if(!isRunningOnCLI){
+                viewController.showAlert("Error initialising server", e.getMessage());
+                viewController.serverStopped();
+            }
+            log.errorMessage(e.getMessage());
+        }
+    }
+
+    /**
      * Main Server thread.
      */
     public void run(){
         while(ServerOn){
-            viewController.disableStart();
-            viewController.enableStop();
-            viewController.updateStatus("Waiting for clients...");
+            if(!isRunningOnCLI){
+                viewController.disableStart();
+                viewController.enableStop();
+                viewController.updateStatus("Waiting for clients...");
+            }
             try{
                 jettyServer.start();
                 Socket client = serverSocket.accept();
@@ -86,7 +125,9 @@ public class Server extends Thread {
                 i++;
                 System.out.println("Added new client.");
                 new SendMessage(clients, this);
-                viewController.serverStarted();
+                if(!isRunningOnCLI){
+                    viewController.serverStarted();
+                }
             } catch (Exception e){
                 if(e instanceof SocketException){
                     log.infoMessage("Server socket closed: \n"+e.getMessage());
@@ -104,9 +145,11 @@ public class Server extends Thread {
     public void stopServer(){
         log.infoMessage("SERVER STOPPING....");
         ServerOn = false;
-        viewController.serverStopping();
-        viewController.updateStatus("Stopping server..");
-        viewController.disableStop();
+        if(!isRunningOnCLI){
+            viewController.serverStopping();
+            viewController.updateStatus("Stopping server..");
+            viewController.disableStop();
+        }
         for(int i=0; i< clients.size(); i++){
             if(clients.get(i)==null){
                 System.out.println("got a null client..");
@@ -118,13 +161,17 @@ public class Server extends Thread {
         try{
             log.infoMessage("Closing Server Socket...");
             serverSocket.close();
-            viewController.enableStart();
-            viewController.serverStopped();
+            if(!isRunningOnCLI){
+                viewController.enableStart();
+                viewController.serverStopped();
+            }
             log.infoMessage("Stopped server.");
         } catch (IOException e){
             log.errorMessage(e.toString());
-            viewController.enableStart();
-            viewController.serverStopped();
+            if(!isRunningOnCLI){
+                viewController.enableStart();
+                viewController.serverStopped();
+            }
             log.errorMessage("Error stopping server!");
         }
     }
