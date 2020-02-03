@@ -1,6 +1,7 @@
 package dbSystem;
 
 import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -224,10 +225,10 @@ public class SQLQueries {
      * @param id - the id of the requested user
      * @return - all informatiomn about the person
      */
-    public JSONArray getPerson(int id){
+    public JSONObject getPerson(int id){
         String sql = "SELECT * FROM people WHERE id="+id+";";
         ResultSet rs = null;
-        JSONArray person = new JSONArray();
+        JSONObject person = new JSONObject();
         try {
             PreparedStatement psmt = conn.prepareStatement(sql);
             rs = psmt.executeQuery();

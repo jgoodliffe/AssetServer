@@ -3,6 +3,7 @@ package servlets;
 import dbSystem.DataStore;
 import org.eclipse.jetty.http.HttpStatus;
 import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.io.IOException;
 
@@ -19,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
             response.setStatus(HttpStatus.OK_200);
             try{
                 int id = Integer.parseInt(requestUrl.substring("/people/".length())); //Get User ID to look up
-                JSONArray json = DataStore.getInstance().getSqlQueries().getPerson(id);
+                JSONObject json = DataStore.getInstance().getSqlQueries().getPerson(id);
                 if(json!= null){
                     response.getOutputStream().println(json.toString());
                 } else{

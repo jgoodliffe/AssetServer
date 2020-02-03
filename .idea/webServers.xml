@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="17f587b2-9324-4a6f-a1cf-867249636cf0" name="Main" url="http://thecuntry.club">
+        <fileTransfer host="thecuntry.club" port="50000" privateKey="$USER_HOME$/.ssh/id_rsa" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="50000" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -13,7 +13,7 @@ public class JSONConverter {
      * @return a JSONArray
      * @throws Exception
      */
-    public static JSONArray convertToJSON(ResultSet resultSet)
+    public static JSONArray convertToJSONArray(ResultSet resultSet)
             throws SQLException {
         JSONArray jsonArray = new JSONArray();
         while (resultSet.next()) {
@@ -26,6 +26,25 @@ public class JSONConverter {
             }
         }
         return jsonArray;
+    }
+
+    /**
+     * Convert a result set into a JSON Array
+     * @param resultSet
+     * @return a JSONArray
+     * @throws Exception
+     */
+    public static JSONObject convertToJSON(ResultSet resultSet)
+            throws SQLException {
+        JSONObject obj = new JSONObject();
+        while (resultSet.next()) {
+            int total_rows = resultSet.getMetaData().getColumnCount();
+            for (int i = 0; i < total_rows; i++) {
+                obj.put(resultSet.getMetaData().getColumnLabel(i + 1)
+                        .toLowerCase(), resultSet.getObject(i + 1));
+            }
+        }
+        return obj;
     }
     /**
      * Convert a result set into a XML List
