@@ -6,40 +6,57 @@ import org.json.JSONObject;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * JSONConverter - Utility Functions to convert SQL ResultSets into JSON.
+ */
 public class JSONConverter {
+
     /**
-     * Convert a result set into a JSON Array
+     * convertToJSONArray
      * @param resultSet
-     * @return a JSONArray
-     * @throws Exception
+     * @return
+     * @throws SQLException
      */
     public static JSONArray convertToJSONArray(ResultSet resultSet)
             throws SQLException {
-        JSONArray jsonArray = new JSONArray();
-        while (resultSet.next()) {
-            int total_rows = resultSet.getMetaData().getColumnCount();
-            for (int i = 0; i < total_rows; i++) {
-                JSONObject obj = new JSONObject();
-                obj.put(resultSet.getMetaData().getColumnLabel(i + 1)
-                        .toLowerCase(), resultSet.getObject(i + 1));
-                jsonArray.put(obj);
-            }
+        JSONArray arr = new JSONArray();
+        int colCount = resultSet.getMetaData().getColumnCount();
+        while(resultSet.next()){
+            arr.put(getJSObject(colCount,resultSet));
         }
-        return jsonArray;
+
+        return arr;
     }
 
     /**
-     * Convert a result set into a JSON Array
+     * getJSObject - Return an individual JSON Object
+     * @param columnCount - Number of columns.
+     * @param rs - resultSet
+     * @return JSONObject - returns all rows as JSON objects.
+     * @throws SQLException - if nothing exists.
+     */
+    public static JSONObject getJSObject(int columnCount, ResultSet rs) throws SQLException {
+        JSONObject object = new JSONObject();
+
+        for(int i=0; i<columnCount; i++){
+            object.put(rs.getMetaData().getColumnLabel(i + 1)
+                    .toLowerCase(), rs.getObject(i + 1));
+        }
+        return object;
+    }
+
+    /**
+     * Convert a result set into a JSON Object
      * @param resultSet
-     * @return a JSONArray
+     * @return a JSONObject
      * @throws Exception
      */
     public static JSONObject convertToJSONObject(ResultSet resultSet)
             throws SQLException {
         JSONObject obj = new JSONObject();
         while (resultSet.next()) {
-            int total_rows = resultSet.getMetaData().getColumnCount();
-            for (int i = 0; i < total_rows; i++) {
+            int columnCount = resultSet.getMetaData().getColumnCount();
+            for (int i = 0; i < columnCount; i++) {
                 obj.put(resultSet.getMetaData().getColumnLabel(i + 1)
                         .toLowerCase(), resultSet.getObject(i + 1));
             }

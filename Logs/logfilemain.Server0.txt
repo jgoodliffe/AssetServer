@@ -1,24 +1,24 @@
-Feb 03, 2020 11:51:33 PM LoggingSystem.LoggingSystem <init>
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Feb 03, 2020 11:51:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerMon Feb 03 23:51:33 GMT 2020 New server instance.
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Feb 04 15:18:41 GMT 2020 New server instance.
 
-Feb 03, 2020 11:51:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerMon Feb 03 23:51:33 GMT 2020 main.Server successfully initialised.
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Feb 04 15:18:41 GMT 2020 main.Server successfully initialised.
 
-Feb 03, 2020 11:51:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerMon Feb 03 23:51:33 GMT 2020 Connecting to datastore...
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerTue Feb 04 15:18:41 GMT 2020 Connecting to datastore...
 
-Feb 03, 2020 11:51:33 PM LoggingSystem.LoggingSystem <init>
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Feb 03, 2020 11:51:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreMon Feb 03 23:51:33 GMT 2020 Found datastore Directory.
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Feb 04 15:18:41 GMT 2020 Found datastore Directory.
 
-Feb 03, 2020 11:51:34 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreMon Feb 03 23:51:33 GMT 2020 Running consistency check:
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Feb 04 15:18:41 GMT 2020 Running consistency check:
 
-Feb 03, 2020 11:51:34 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreMon Feb 03 23:51:33 GMT 2020 
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Feb 04 15:18:41 GMT 2020 
 
 Consistency Report
  - users table exists
@@ -28,22 +28,22 @@ Consistency Report
  - transport table exists
 
 
-Feb 03, 2020 11:51:34 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreMon Feb 03 23:51:33 GMT 2020 Passed DB Consistency check.
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Feb 04 15:18:41 GMT 2020 Passed DB Consistency check.
 
-Feb 03, 2020 11:51:34 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreMon Feb 03 23:51:33 GMT 2020 Connected to SQLite Database.
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Feb 04 15:18:41 GMT 2020 Connected to SQLite Database.
 
-Feb 03, 2020 11:51:34 PM LoggingSystem.LoggingSystem <init>
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Feb 03, 2020 11:51:34 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreMon Feb 03 23:51:34 GMT 2020 Found datastore Directory.
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Feb 04 15:18:41 GMT 2020 Found datastore Directory.
 
-Feb 03, 2020 11:51:34 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreMon Feb 03 23:51:34 GMT 2020 Running consistency check:
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Feb 04 15:18:41 GMT 2020 Running consistency check:
 
-Feb 03, 2020 11:51:34 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreMon Feb 03 23:51:34 GMT 2020 
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Feb 04 15:18:41 GMT 2020 
 
 Consistency Report
  - users table exists
@@ -53,9 +53,9 @@ Consistency Report
  - transport table exists
 
 
-Feb 03, 2020 11:51:34 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreMon Feb 03 23:51:34 GMT 2020 Passed DB Consistency check.
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Feb 04 15:18:41 GMT 2020 Passed DB Consistency check.
 
-Feb 03, 2020 11:51:34 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreMon Feb 03 23:51:34 GMT 2020 Connected to SQLite Database.
+Feb 04, 2020 3:18:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreTue Feb 04 15:18:41 GMT 2020 Connected to SQLite Database.
 
