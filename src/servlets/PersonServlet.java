@@ -7,6 +7,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 
+import javax.management.openmbean.TabularDataSupport;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,8 +19,10 @@ import javax.servlet.http.HttpServletResponse;
         public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
             String requestUrl = request.getRequestURI();
             response.setStatus(HttpStatus.OK_200);
+            response.setContentType("application/json");
+            response.setCharacterEncoding("UTF-8");
             try{
-                int id = Integer.parseInt(requestUrl.substring("/people/".length())); //Get User ID to look up
+                int id = Integer.parseInt(requestUrl.substring("/person/".length())); //Get User ID to look up
                 JSONObject json = DataStore.getInstance().getSqlQueries().getPerson(id);
                 if(json!= null){
                     response.getOutputStream().println(json.toString());
@@ -27,8 +30,19 @@ import javax.servlet.http.HttpServletResponse;
                     response.getOutputStream().println("{}");
                 }
             } catch(NumberFormatException e){
-                //Invalid search criteria
-                response.getOutputStream().println("{}");
+                //All people
+                if(requestUrl.substring("/person/".length()).equals("all")){
+                    JSONObject json = new JSONObject();
+                    json.put("people",DataStore.getInstance().getSqlQueries().getAllPeople());
+                    if(json!= null){
+                        response.getOutputStream().println(json.toString());
+                    } else{
+                        response.getOutputStream().println("{}");
+                    }
+                } else{
+                    //Invalid search criteria
+                    response.getOutputStream().println("{}");
+                }
             }
 
         }

@@ -232,12 +232,28 @@ public class SQLQueries {
         try {
             PreparedStatement psmt = conn.prepareStatement(sql);
             rs = psmt.executeQuery();
-            person = JSONConverter.convertToJSON(rs);
+            person = JSONConverter.convertToJSONObject(rs);
             return person;
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
         return person;
+    }
+
+    public JSONArray getAllPeople(){
+        String sql = "SELECT * FROM PEOPLE;";
+        ResultSet rs = null;
+        JSONArray people = new JSONArray();
+        try {
+            PreparedStatement psmt = conn.prepareStatement(sql);
+            rs = psmt.executeQuery();
+            people = JSONConverter.convertToJSONArray(rs);
+            return people;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return people;
     }
 }

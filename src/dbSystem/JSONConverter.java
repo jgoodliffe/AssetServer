@@ -34,7 +34,7 @@ public class JSONConverter {
      * @return a JSONArray
      * @throws Exception
      */
-    public static JSONObject convertToJSON(ResultSet resultSet)
+    public static JSONObject convertToJSONObject(ResultSet resultSet)
             throws SQLException {
         JSONObject obj = new JSONObject();
         while (resultSet.next()) {
