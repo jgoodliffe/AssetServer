@@ -22,7 +22,6 @@ import java.util.List;
  */
 public class Server extends Thread {
     private ServerSocket serverSocket;
-    private PersonServlet http;
     private mainViewController viewController;
     private LogViewController consoleViewController;
     private LoggingSystem log;
@@ -49,15 +48,16 @@ public class Server extends Thread {
         log.infoMessage("New server instance.");
         try{
             this.serverSocket = new ServerSocket(port);
-            this.http = new PersonServlet();
+            //this.http = new PersonServlet();
             log.infoMessage("main.Server successfully initialised.");
             clients = Collections.synchronizedList(new ArrayList<>());
             ServerOn = true;
             log.infoMessage("Connecting to datastore...");
             mainStore = new DataStore();
             jettyServer = new org.eclipse.jetty.server.Server(8080);
-            jettyContextHandler = new ServletContextHandler(jettyServer, "/person");
-            jettyContextHandler.addServlet(servlets.PersonServlet.class, "/");
+            jettyContextHandler = new ServletContextHandler(jettyServer, "/");
+            jettyContextHandler.addServlet(servlets.PersonServlet.class, "/person/*");
+            jettyContextHandler.addServlet(servlets.LoginServlet.class, "/login/*");
             //this.run();
         } catch (IOException e) {
             viewController.showAlert("Error initialising server", e.getMessage());
@@ -82,15 +82,16 @@ public class Server extends Thread {
         log.infoMessage("New server instance.");
         try{
             this.serverSocket = new ServerSocket(port);
-            this.http = new PersonServlet();
+            //this.http = new PersonServlet();
             log.infoMessage("main.Server successfully initialised.");
             clients = Collections.synchronizedList(new ArrayList<>());
             ServerOn = true;
             log.infoMessage("Connecting to datastore...");
             mainStore = new DataStore();
             jettyServer = new org.eclipse.jetty.server.Server(8080);
-            jettyContextHandler = new ServletContextHandler(jettyServer, "/person");
-            jettyContextHandler.addServlet(servlets.PersonServlet.class, "/");
+            jettyContextHandler = new ServletContextHandler(jettyServer, "/");
+            jettyContextHandler.addServlet(servlets.PersonServlet.class, "/person/*");
+            jettyContextHandler.addServlet(servlets.LoginServlet.class, "/login/*");
             //this.run();
         } catch (IOException e) {
             if(!isRunningOnCLI){
