@@ -256,4 +256,28 @@ public class SQLQueries {
 
         return people;
     }
+
+    /**
+     * Checks Login credentials against those stored in the Database.
+     * @param username
+     * @param password
+     * @return - true/false if details are valid.
+     */
+    public boolean checkUserCredentials(String username, String password) {
+        ResultSet rs = null;
+        try{
+            PreparedStatement psmt = conn.prepareStatement("SELECT * FROM USERS WHERE username=? and password=?;");
+            psmt.setString(1,username);
+            psmt.setString(2,password);
+            rs = psmt.executeQuery();
+            if(!rs.next()){
+                return false;
+            } else{
+                return true;
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+            return false;
+        }
+    }
 }
