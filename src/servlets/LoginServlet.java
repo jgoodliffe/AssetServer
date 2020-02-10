@@ -1,5 +1,6 @@
 package servlets;
 
+import authentication.TokenStore;
 import dbSystem.DataStore;
 import org.eclipse.jetty.http.HttpStatus;
 import org.json.JSONObject;
@@ -47,16 +48,31 @@ public class LoginServlet extends HttpServlet {
             //Check against what is in the Database
             if(DataStore.getInstance().getSqlQueries().checkUserCredentials(username, password)){
                 //Login Successful
-                //TODO: Tokenize - Generate token - Check user levels etc
+                //TODO: Complete Tokenize - Check if user already has a token!!
                 resp.setStatus(HttpStatus.OK_200);
                 resp.setContentType("application/json");
                 resp.setCharacterEncoding("UTF-8");
-                String authToken = "123abc";
+
+                //Check if token already exists, if not create it.
+                String authToken = "";
+                if(isNullOrEmpty(TokenStore.getInstance().getUsername(username))){
+                    authToken = TokenStore.getInstance().putToken(username);
+                } else
+                {
+                    //Retrieve existing token
+                    authToken = "already exists";
+                }
+
+
+                String userLevel = DataStore.getInstance().getSqlQueries().getUserLevel(username);
                 JSONObject obj = new JSONObject();
+
+
                 obj.put("request-received", "true");
                 obj.put("error-type", "none");
                 obj.put("response-code", HttpStatus.OK_200);
                 obj.put("auth-token", authToken);
+                obj.put("user-level", userLevel);
                 resp.getWriter().write(obj.toString());
 
             } else{

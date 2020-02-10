@@ -280,4 +280,20 @@ public class SQLQueries {
             return false;
         }
     }
+
+    public String getUserLevel(String username) {
+        String userLevel = "";
+        try {
+            PreparedStatement p = conn.prepareStatement("SELECT userlevel FROM users WHERE username=?;");
+            p.setString(1,username);
+            ResultSet r = p.executeQuery();
+            if(r.next()){
+                userLevel = String.valueOf(r.getInt("userlevel"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return userLevel;
+    }
 }
