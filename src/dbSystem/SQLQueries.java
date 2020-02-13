@@ -7,9 +7,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 /**
  * SQLQueries
@@ -138,22 +136,25 @@ public class SQLQueries {
         if(newEvent){
             sql+="INSERT INTO events VALUES "+ name+", "+startDate.toString()+", "+endDate.toString()+";";
         } else{
-            sql+="UPDATE events VALUES "+name+", "+startDate.toString()+", "+endDate.toString()+" WHERE id="+id+";";
+            sql += "UPDATE events VALUES " + name + ", " + startDate.toString() + ", " + endDate.toString() + " WHERE id=" + id + ";";
         }
-        try{
+        try {
             PreparedStatement psmt = conn.prepareStatement(sql);
             psmt.executeQuery();
-        } catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    public void addUser(String username, String password, int ulevel){
-        String sql = "INSERT INTO users VALUES "+ ulevel+", "+username+", "+password+";";
+    public void addUser(String username, String password, int uLevel) {
+        String sql = "INSERT INTO users VALUES ?,?,?;";
 
         PreparedStatement psmt = null;
         try {
             psmt = conn.prepareStatement(sql);
+            psmt.setInt(1, uLevel);
+            psmt.setString(2, username);
+            psmt.setString(3, password);
             psmt.executeQuery();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -270,11 +271,7 @@ public class SQLQueries {
             psmt.setString(1,username);
             psmt.setString(2,password);
             rs = psmt.executeQuery();
-            if(!rs.next()){
-                return false;
-            } else{
-                return true;
-            }
+            return rs.next();
         } catch (SQLException e){
             e.printStackTrace();
             return false;
@@ -287,7 +284,7 @@ public class SQLQueries {
             PreparedStatement p = conn.prepareStatement("SELECT userlevel FROM users WHERE username=?;");
             p.setString(1,username);
             ResultSet r = p.executeQuery();
-            if(r.next()){
+            if (r.next()) {
                 userLevel = String.valueOf(r.getInt("userlevel"));
             }
         } catch (SQLException e) {
@@ -296,4 +293,10 @@ public class SQLQueries {
 
         return userLevel;
     }
+
+    //public boolean createNewUser(String username, String password, int userLevel){
+
+
+    //return false;
+    //}
 }

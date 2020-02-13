@@ -2,6 +2,7 @@ package authentication;
 
 public class TokenData {
     String username;
+    String macAddress;
     long expirationTime;
 
     TokenData(String username){

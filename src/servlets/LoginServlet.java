@@ -1,5 +1,6 @@
 package servlets;
 
+import LoggingSystem.LoggingSystem;
 import authentication.TokenStore;
 import dbSystem.DataStore;
 import org.eclipse.jetty.http.HttpStatus;
@@ -13,6 +14,13 @@ import java.io.IOException;
 import java.util.Base64;
 
 public class LoginServlet extends HttpServlet {
+
+    private LoggingSystem log;
+
+    public static boolean isNullOrEmpty(String str) {
+        return str == null || str.isEmpty();
+    }
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setStatus(HttpStatus.NOT_IMPLEMENTED_501);
@@ -20,10 +28,9 @@ public class LoginServlet extends HttpServlet {
         resp.setCharacterEncoding("UTF-8");
     }
 
-    public static boolean isNullOrEmpty(String str) {
-        if(str != null && !str.isEmpty())
-            return false;
-        return true;
+    @Override
+    public void init() throws ServletException {
+        this.log = LoggingSystem.getInstance();
     }
 
     @Override
@@ -32,10 +39,10 @@ public class LoginServlet extends HttpServlet {
         resp.setStatus(HttpStatus.OK_200);
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
-        System.out.println(req);
+        //System.out.println(req);
         String authHeader = req.getHeader("auth"); //u + p sent in request header.
         if(!isNullOrEmpty(authHeader)){
-            System.out.println(authHeader);
+            //System.out.println(authHeader);
             String encodedAuth = authHeader.substring(authHeader.indexOf(' ')+1); //Isolate base64 encoded part of auth header
 
             String decodedAuth = new String(Base64.getDecoder().decode(encodedAuth));
@@ -43,11 +50,12 @@ public class LoginServlet extends HttpServlet {
             String username = decodedAuth.substring(0, decodedAuth.indexOf(':'));
             String password = decodedAuth.substring(decodedAuth.indexOf(':')+1);
 
-            System.out.println("Received uName= "+username+" and pWord= "+password);
+            log.infoMessage("Received login request for user " + username);
 
             //Check against what is in the Database
             if(DataStore.getInstance().getSqlQueries().checkUserCredentials(username, password)){
                 //Login Successful
+                log.infoMessage("User: " + username + " has successfully logged in. Creating token.");
                 //TODO: Complete Tokenize - Check if user already has a token!!
                 resp.setStatus(HttpStatus.OK_200);
                 resp.setContentType("application/json");
@@ -57,9 +65,11 @@ public class LoginServlet extends HttpServlet {
                 String authToken = "";
                 if(isNullOrEmpty(TokenStore.getInstance().getUsername(username))){
                     authToken = TokenStore.getInstance().putToken(username);
+                    log.infoMessage("Issued token: " + authToken);
                 } else
                 {
                     //Retrieve existing token
+                    log.infoMessage("A valid token already exists for this user: " + authToken);
                     authToken = "already exists";
                 }
 
@@ -75,9 +85,10 @@ public class LoginServlet extends HttpServlet {
                 obj.put("user-level", userLevel);
                 resp.getWriter().write(obj.toString());
 
-            } else{
+            } else {
                 //Login Unsuccessful.
-                System.out.println("Login unsuccessful!");
+                log.infoMessage("Unsuccessful login for user: " + username +
+                        "\n Reason: Bad login credentials.");
                 resp.setStatus(HttpStatus.BAD_REQUEST_400);
                 resp.setContentType("application/json");
                 resp.setCharacterEncoding("UTF-8");
@@ -89,7 +100,7 @@ public class LoginServlet extends HttpServlet {
                 resp.getWriter().write(err.toString());
             }
         } else{
-            System.out.println("Invalid auth header.");
+            log.infoMessage("Invalid request received (Bad auth header)");
             resp.setStatus(HttpStatus.BAD_REQUEST_400);
             resp.setContentType("application/json");
             resp.setCharacterEncoding("UTF-8");

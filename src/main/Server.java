@@ -5,7 +5,6 @@ import GUI.mainViewController;
 import LoggingSystem.LoggingSystem;
 import dbSystem.DataStore;
 import org.eclipse.jetty.servlet.ServletContextHandler;
-import servlets.PersonServlet;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -65,6 +64,7 @@ public class Server extends Thread {
             log.errorMessage(e.getMessage());
         }
     }
+
 
     /**
      * Constructor for no-GUI

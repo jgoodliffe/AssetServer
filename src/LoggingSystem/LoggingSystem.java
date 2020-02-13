@@ -1,7 +1,6 @@
 package LoggingSystem;
 
 import GUI.LogViewController;
-import GUI.mainViewController;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,13 +20,19 @@ public class LoggingSystem {
     private final Logger logger = Logger.getLogger("myLog");
     private FileHandler fh;
 
-    public LoggingSystem(String tag){
+    private static LoggingSystem instance = new LoggingSystem("Servlet");
+
+    public static LoggingSystem getInstance() {
+        return instance;
+    }
+
+    public LoggingSystem(String tag) {
         today = Calendar.getInstance().getTime();
         String today2 = Calendar.getInstance().toString();
-        logName = tag+today.toString()+" ";
-        try{
-            new File(System.getProperty("user.dir")+"/Logs/").mkdirs();
-            fh = new FileHandler(System.getProperty("user.dir")+"/Logs/logfile" + tag +"%u.txt");
+        logName = tag + today.toString() + " ";
+        try {
+            new File(System.getProperty("user.dir") + "/Logs/").mkdirs();
+            fh = new FileHandler(System.getProperty("user.dir") + "/Logs/logfile" + tag + "%u.txt");
             logger.addHandler(fh);
             SimpleFormatter sf = new SimpleFormatter();
             fh.setFormatter(sf);
