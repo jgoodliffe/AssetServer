@@ -1,11 +1,11 @@
 package dbSystem;
 
-import authentication.PasswordGenerator;
 import authentication.PasswordHasher;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -188,11 +188,11 @@ public class SQLQueries {
     }
 
     public void changePassword(int id, String password){
-        String sql = "UPDATE users SET password=? WHERE id=?;";
+        String sql = "UPDATE users SET password=? WHERE userID=?;";
 
 
         //Hash new Password:
-        password = passwordHasher.hashPassword(password);
+        //password = passwordHasher.hashPassword(password);
 
         try {
             conn.close();
@@ -202,6 +202,7 @@ public class SQLQueries {
             psmt.setInt(2,id);
             psmt.setString(1, password);
             psmt.executeUpdate();
+            //System.out.println("New Password set to: "+password);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -350,15 +351,18 @@ public class SQLQueries {
      * @return - true/false if details are valid.
      */
     public boolean checkUserCredentials(String username, String password) {
-        ResultSet rs = null;
-        try{
+        //Hash Password first.
+        //password = passwordHasher.hashPassword(password);
+        try {
             PreparedStatement psmt = conn.prepareStatement("SELECT * FROM USERS WHERE username=? and password=?;");
-            psmt.setString(1,username);
-            psmt.setString(2,password);
-            rs = psmt.executeQuery();
-            psmt.close();
-
-            return rs.next();
+            psmt.setString(1, username);
+            psmt.setString(2, password);
+            ResultSet rs = psmt.executeQuery();
+            if (rs.next()) {
+                System.out.println(rs.getString(3));
+                return true;
+            }
+            return false;
         } catch (SQLException e){
             e.printStackTrace();
             return false;
@@ -404,12 +408,13 @@ public class SQLQueries {
     }
 
     public Integer getUserID(String username){
-        try{
-            PreparedStatement p = conn.prepareStatement("SELECT id FROM users WHERE username=?;");
-            p.setString(1,username);
+        try {
+            System.out.println("Getting username for " + username);
+            PreparedStatement p = conn.prepareStatement("SELECT userID FROM users WHERE username=?;");
+            p.setString(1, username);
             ResultSet rs = p.executeQuery();
-            if(rs.next()){
-                return rs.getInt("id");
+            if (rs.next()) {
+                return rs.getInt("userID");
             }
         } catch (SQLException e){
             e.printStackTrace();
@@ -448,5 +453,47 @@ public class SQLQueries {
                 }
             }
         }
+    }
+
+    /**
+     * getDetailsForUsername - Returns all details about a user for a given username.
+     *
+     * @param username - the user's username
+     * @return - ArrayList of all details in String format.
+     */
+    public ArrayList<String> getDetailsForUsername(String username) {
+        ArrayList<String> details = new ArrayList();
+        try {
+            int userID = getUserID(username);
+            PreparedStatement p = conn.prepareStatement("SELECT * FROM People WHERE userID=?;");
+            p.setInt(1, userID);
+            ResultSet rs = p.executeQuery();
+            ResultSetMetaData rsmd = rs.getMetaData();
+            if (rs.next()) {
+                for (int i = 1; i < rsmd.getColumnCount(); i++) {
+                    int columnType = rsmd.getColumnType(i);
+                    if (columnType == Types.VARCHAR) {
+                        details.add(rs.getString(i));
+                    }
+                    if (columnType == Types.INTEGER) {
+                        details.add(Integer.toString(rs.getInt(i)));
+                    }
+                }
+            }
+            return details;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
+        }
+        return details;
     }
 }

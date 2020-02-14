@@ -28,5 +28,8 @@
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
     <orderEntry type="library" name="org.eclipse.jetty:jetty-server:9.3.0.RC0" level="project" />
     <orderEntry type="library" name="org.eclipse.jetty:jetty-servlet:9.3.0.RC0" level="project" />
+    <orderEntry type="library" name="javax.activation:activation:1.1.1" level="project" />
+    <orderEntry type="library" name="javax.mail:javax.mail-api:1.6.2" level="project" />
+    <orderEntry type="library" name="com.sun.mail:javax.mail:1.6.0" level="project" />
   </component>
 </module>

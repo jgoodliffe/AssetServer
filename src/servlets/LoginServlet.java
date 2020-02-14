@@ -4,6 +4,7 @@ import LoggingSystem.LoggingSystem;
 import authentication.PasswordGenerator;
 import authentication.TokenStore;
 import dbSystem.DataStore;
+import email.SendEmail;
 import org.eclipse.jetty.http.HttpStatus;
 import org.json.JSONObject;
 
@@ -12,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Base64;
 
 public class LoginServlet extends HttpServlet {
@@ -52,7 +54,7 @@ public class LoginServlet extends HttpServlet {
 
             //Check if Username exists
             boolean userExists = DataStore.getInstance().getSqlQueries().checkUserExists(username);
-            if(userExists){
+            if(userExists) {
                 //Generate new Password, Store and send as email.
                 PasswordGenerator pw = new PasswordGenerator();
                 String newPassword = pw.newPassword();
@@ -62,9 +64,25 @@ public class LoginServlet extends HttpServlet {
 
                 DataStore.getInstance().getSqlQueries().changePassword(id, newPassword);
 
-                log.infoMessage("Password for "+username+" updated.");
-                JSONObject obj = new JSONObject();
+                //Send Email
+                SendEmail sender = new SendEmail();
 
+                //Get email address from SQL Database
+                String emailAddr = "";
+                String name = "";
+                ArrayList<String> userDetails = DataStore.getInstance().getSqlQueries().getDetailsForUsername(username);
+
+                emailAddr = userDetails.get(6);
+                name = userDetails.get(1) + " " + userDetails.get(2);
+
+                //Finally, Send Email
+                sender.newEmail(emailAddr, "Dear " + name + ",\n\nYour new password is: '" + newPassword + "'" +
+                        "\n\nYou may now log in with this password." +
+                        "\n\nBest Regards," +
+                        "\n\nAdministrator", "Asset Manager Pro - Password Reset Request");
+
+                log.infoMessage("Password for " + username + " updated.");
+                JSONObject obj = new JSONObject();
 
                 obj.put("request-received", "true");
                 obj.put("error-type", "none");
