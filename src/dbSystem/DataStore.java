@@ -18,6 +18,8 @@ public class DataStore {
     private DatabaseMetaData meta;
     private LoggingSystem log;
     private SQLQueries sqlQueries;
+    private String url;
+    private String dbDir;
 
     private static DataStore instance = new DataStore();
     public static DataStore getInstance(){
@@ -203,11 +205,19 @@ public class DataStore {
         return false;
     }
 
+    public void newConnection(){
+        try{
+            conn = DriverManager.getConnection(url);
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+
     /**
      * Initialses the database connection & creates db if it doesnt already exist
      */
     public void init() {
-        String dbDir = dbDirectoryCreator();
+        dbDir = dbDirectoryCreator();
         if(dbDir.equals("")){
             log.errorMessage("Invalid database directory! Aborting.");
             return;
@@ -215,7 +225,7 @@ public class DataStore {
         try {
            // String dbFolder = Paths.get(dbDir).toString();
             //Modify dbdir to output relative path...
-            String url = "jdbc:sqlite:"+dbDir;
+            url = "jdbc:sqlite:"+dbDir;
             conn = DriverManager.getConnection(url);
 
 

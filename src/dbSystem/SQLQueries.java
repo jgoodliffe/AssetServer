@@ -1,12 +1,11 @@
 package dbSystem;
 
+import authentication.PasswordGenerator;
+import authentication.PasswordHasher;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Date;
 
 /**
@@ -17,11 +16,13 @@ public class SQLQueries {
     private static DataStore ds;
     private static Connection conn;
     private static JSONConverter conv;
+    private static PasswordHasher passwordHasher;
 
     public SQLQueries(DataStore ds, Connection conn){
         SQLQueries.ds = ds;
         SQLQueries.conn = conn;
         conv = new JSONConverter();
+        passwordHasher = new PasswordHasher();
     }
 
 
@@ -144,10 +145,24 @@ public class SQLQueries {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
+        }
     }
 
     public void addUser(String username, String password, int uLevel) {
         String sql = "INSERT INTO users VALUES ?,?,?;";
+
+        //Hash password
+        password = passwordHasher.hashPassword(password);
 
         PreparedStatement psmt = null;
         try {
@@ -159,17 +174,47 @@ public class SQLQueries {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
+        }
     }
 
-    public void changePassword(String username, String password){
-        String sql = "UPDATE users SET password="+password+" WHERE username="+username+";";
+    public void changePassword(int id, String password){
+        String sql = "UPDATE users SET password=? WHERE id=?;";
 
-        PreparedStatement psmt = null;
+
+        //Hash new Password:
+        password = passwordHasher.hashPassword(password);
+
         try {
-            psmt = conn.prepareStatement(sql);
-            psmt.executeQuery();
+            conn.close();
+            DataStore.getInstance().newConnection();
+            conn = DataStore.getInstance().getConn();
+            PreparedStatement psmt = conn.prepareStatement(sql);
+            psmt.setInt(2,id);
+            psmt.setString(1, password);
+            psmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+        }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
         }
     }
 
@@ -183,6 +228,15 @@ public class SQLQueries {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
+        }
     }
 
     public void changeULevel(String username, int ulevel){
@@ -194,6 +248,15 @@ public class SQLQueries {
             psmt.executeQuery();
         } catch (SQLException e) {
             e.printStackTrace();
+        }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
         }
     }
 
@@ -238,6 +301,17 @@ public class SQLQueries {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
+        }
 
         return person;
     }
@@ -253,6 +327,17 @@ public class SQLQueries {
             return people;
         } catch (SQLException e) {
             e.printStackTrace();
+        }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
         }
 
         return people;
@@ -271,10 +356,23 @@ public class SQLQueries {
             psmt.setString(1,username);
             psmt.setString(2,password);
             rs = psmt.executeQuery();
+            psmt.close();
+
             return rs.next();
         } catch (SQLException e){
             e.printStackTrace();
             return false;
+        }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
         }
     }
 
@@ -290,13 +388,65 @@ public class SQLQueries {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
+        }
 
         return userLevel;
     }
 
-    //public boolean createNewUser(String username, String password, int userLevel){
+    public Integer getUserID(String username){
+        try{
+            PreparedStatement p = conn.prepareStatement("SELECT id FROM users WHERE username=?;");
+            p.setString(1,username);
+            ResultSet rs = p.executeQuery();
+            if(rs.next()){
+                return rs.getInt("id");
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+        return null;
+    }
 
-
-    //return false;
-    //}
+    /**
+     * Check if a username exists in the database
+     * @param username - the username
+     * @return - if the user exists
+     */
+    public boolean checkUserExists(String username) {
+        try{
+            PreparedStatement p = conn.prepareStatement("SELECT EXISTS (SELECT * FROM users WHERE username=?);");
+            p.setString(1,username);
+            ResultSet r = p.executeQuery();
+            if(r.next()){
+                p.close();
+                return true;
+            } else {
+                return false;
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+            return false;
+        }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
+        }
+    }
 }

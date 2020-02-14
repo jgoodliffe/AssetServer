@@ -27,7 +27,7 @@ public class Server extends Thread {
     private org.eclipse.jetty.server.Server jettyServer;
     private ServletContextHandler jettyContextHandler;
     volatile boolean ServerOn;
-    DataStore mainStore;
+    //DataStore mainStore;
     static protected List<ClientHandler> clients;
     private int port;
     private boolean isRunningOnCLI;
@@ -52,7 +52,7 @@ public class Server extends Thread {
             clients = Collections.synchronizedList(new ArrayList<>());
             ServerOn = true;
             log.infoMessage("Connecting to datastore...");
-            mainStore = new DataStore();
+            //mainStore = new DataStore();
             jettyServer = new org.eclipse.jetty.server.Server(8080);
             jettyContextHandler = new ServletContextHandler(jettyServer, "/");
             jettyContextHandler.addServlet(servlets.PersonServlet.class, "/person/*");
@@ -87,7 +87,6 @@ public class Server extends Thread {
             clients = Collections.synchronizedList(new ArrayList<>());
             ServerOn = true;
             log.infoMessage("Connecting to datastore...");
-            mainStore = new DataStore();
             jettyServer = new org.eclipse.jetty.server.Server(8080);
             jettyContextHandler = new ServletContextHandler(jettyServer, "/");
             jettyContextHandler.addServlet(servlets.PersonServlet.class, "/person/*");
@@ -119,7 +118,7 @@ public class Server extends Thread {
                 DataInputStream dis = new DataInputStream(client.getInputStream());
                 DataOutputStream dos = new DataOutputStream(client.getOutputStream());
                 JSONParse jp = new JSONParse();
-                ClientHandler newClient = new ClientHandler(client, "client "+i, dis, dos, this, mainStore ,jp);
+                ClientHandler newClient = new ClientHandler(client, "client "+i, dis, dos, this,null ,jp);
                 Thread t = new Thread(newClient);
                 clients.add(newClient);
                 t.start();
