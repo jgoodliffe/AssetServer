@@ -1,29 +1,26 @@
-Feb 14, 2020 4:00:30 PM LoggingSystem.LoggingSystem <init>
+Feb 15, 2020 12:22:08 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Feb 14, 2020 4:00:30 PM LoggingSystem.LoggingSystem <init>
+Feb 15, 2020 12:22:08 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Feb 14, 2020 4:00:30 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerFri Feb 14 16:00:30 GMT 2020 New server instance.
+Feb 15, 2020 12:22:08 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerSat Feb 15 12:22:08 GMT 2020 New server instance.
 
-Feb 14, 2020 4:00:30 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerFri Feb 14 16:00:30 GMT 2020 main.Server successfully initialised.
+Feb 15, 2020 12:22:08 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerSat Feb 15 12:22:08 GMT 2020 main.Server successfully initialised.
 
-Feb 14, 2020 4:00:30 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerFri Feb 14 16:00:30 GMT 2020 Connecting to datastore...
+Feb 15, 2020 12:22:08 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerSat Feb 15 12:22:08 GMT 2020 Connecting to datastore...
 
-Feb 14, 2020 4:00:32 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Feb 14 16:00:30 GMT 2020 Received login request for user jamie
-
-Feb 14, 2020 4:00:32 PM LoggingSystem.LoggingSystem <init>
+Feb 15, 2020 12:24:18 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Feb 14, 2020 4:00:32 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreFri Feb 14 16:00:32 GMT 2020 Found datastore Directory.
+Feb 15, 2020 12:24:18 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreSat Feb 15 12:24:18 GMT 2020 Found datastore Directory.
 
-Feb 14, 2020 4:00:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreFri Feb 14 16:00:32 GMT 2020 Running consistency check:
+Feb 15, 2020 12:24:19 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreSat Feb 15 12:24:18 GMT 2020 Running consistency check:
 
-Feb 14, 2020 4:00:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreFri Feb 14 16:00:32 GMT 2020 
+Feb 15, 2020 12:24:19 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreSat Feb 15 12:24:18 GMT 2020 
 
 Consistency Report
  - users table exists
@@ -33,13 +30,1324 @@ Consistency Report
  - transport table exists
 
 
-Feb 14, 2020 4:00:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreFri Feb 14 16:00:32 GMT 2020 Passed DB Consistency check.
+Feb 15, 2020 12:24:19 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreSat Feb 15 12:24:18 GMT 2020 Passed DB Consistency check.
 
-Feb 14, 2020 4:00:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreFri Feb 14 16:00:32 GMT 2020 Connected to SQLite Database.
+Feb 15, 2020 12:24:19 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreSat Feb 15 12:24:18 GMT 2020 Connected to SQLite Database.
 
-Feb 14, 2020 4:00:33 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Feb 14 16:00:30 GMT 2020 Unsuccessful login for user: jamie
+Feb 15, 2020 12:24:19 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Password for jamie updated.
+
+Feb 15, 2020 12:24:37 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 12:24:37 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 12:24:37 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: b4dc343e-e49a-4925-94bc-f488edc706d9
+
+Feb 15, 2020 12:25:19 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 12:25:19 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 12:25:19 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 83d07360-6782-40f6-952b-4e707e07e01c
+
+Feb 15, 2020 12:28:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 12:28:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 12:28:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: b93cf9f5-fc88-4fc6-9971-a708de3189c9
+
+Feb 15, 2020 12:57:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 12:57:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
  Reason: Bad login credentials.
+
+Feb 15, 2020 12:57:36 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 12:57:36 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 12:57:36 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 36f80d26-5f42-4080-83f8-ef9bab05479e
+
+Feb 15, 2020 12:58:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 12:58:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 12:58:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: c4f76a3a-0860-4c59-ab45-aab99cf89ba1
+
+Feb 15, 2020 1:00:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 1:00:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 1:00:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: ca87c83e-12fe-416e-9288-d572d1381fab
+
+Feb 15, 2020 1:01:29 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 1:01:29 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 1:01:29 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 120f0642-d4a3-440b-8410-352d889906a7
+
+Feb 15, 2020 1:02:29 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 1:02:29 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 1:02:29 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 7b0988c1-b14c-4f1f-96d6-bc146198b3c6
+
+Feb 15, 2020 1:09:55 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 1:09:55 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 1:10:13 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 1:10:13 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 1:10:13 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 7d7e42af-aba1-428f-ac4e-c72f81e370b7
+
+Feb 15, 2020 1:11:09 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 1:11:09 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 1:11:09 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 2cf452f3-ef1e-4a48-8ab2-c9157f2bbfdc
+
+Feb 15, 2020 1:18:00 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 1:18:00 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 1:18:00 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 9a636203-8102-4819-a634-6c13e69e0ed6
+
+Feb 15, 2020 1:43:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 1:43:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 1:43:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 443c0202-c4ce-45f6-a108-cd7f320723ed
+
+Feb 15, 2020 1:51:50 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 1:51:50 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 1:51:50 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 7069e868-93f6-4f03-943b-274a8807fa03
+
+Feb 15, 2020 1:52:32 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 1:52:32 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 1:52:32 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 3b6c0353-a17f-470d-ad85-99af9d5d49ca
+
+Feb 15, 2020 1:54:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 1:54:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 1:54:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: b6ef69a4-d04d-44f9-aec7-765c09d619b2
+
+Feb 15, 2020 2:06:32 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:06:32 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 2:06:46 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:06:46 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 2:06:46 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: d4076850-bd7a-4147-93aa-b52dd20d95c5
+
+Feb 15, 2020 2:07:13 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:07:13 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 2:07:13 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 3d6dbc3f-0eef-4d3c-af64-471058cb9f49
+
+Feb 15, 2020 2:09:50 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:09:50 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 2:09:50 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 1e38cde8-205b-4d66-aef0-29081da3c0f8
+
+Feb 15, 2020 2:10:36 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:10:36 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 2:10:38 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:10:38 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 2:10:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:10:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 2:10:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: edf1a53a-af24-47fb-a78a-322f5543bca4
+
+Feb 15, 2020 2:11:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:11:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 2:11:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: a3724f33-30de-49b5-ae50-5ff3a61a6192
+
+Feb 15, 2020 2:34:00 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:34:00 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 2:34:00 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: ea772251-648a-4844-bcb1-7f9495c4b295
+
+Feb 15, 2020 2:35:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:35:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 2:35:41 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 694016c9-9e43-459f-b7f8-4cbeb7ce0903
+
+Feb 15, 2020 2:36:12 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:36:12 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 2:36:12 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: c2066486-f82b-4186-ab52-5cc66079a1b1
+
+Feb 15, 2020 2:43:01 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:43:01 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 2:43:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:43:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 2:43:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:43:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 2:43:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: c3da5a5c-d936-44c5-ab20-35bf6f60724c
+
+Feb 15, 2020 2:46:25 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:46:25 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 2:46:25 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 213170bb-0820-4bf4-8e74-318b40ee57be
+
+Feb 15, 2020 2:46:42 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:46:42 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 2:46:42 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 8b432615-df1c-47f1-8bd9-a38a398cdd7e
+
+Feb 15, 2020 2:47:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:47:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 2:47:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 81c74c1a-6df2-4789-95d6-6a00dddedd57
+
+Feb 15, 2020 2:50:07 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 2:50:07 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 2:50:07 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: bcb6cc92-5db3-4630-87d7-aa61cfdbe96b
+
+Feb 15, 2020 3:17:45 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:17:45 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 3:17:59 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:17:59 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:17:59 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: e907ad55-b9ee-4a8a-b2d7-424c59f3a3e6
+
+Feb 15, 2020 3:23:30 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:23:30 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:23:30 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 502b7710-b391-4910-ac6a-29093f5a0044
+
+Feb 15, 2020 3:24:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:24:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 3:25:03 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:25:03 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:25:03 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 85081e49-336c-48df-ad29-78d8ca84158e
+
+Feb 15, 2020 3:26:19 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:26:19 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:26:19 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 911fc99f-efb1-4ffb-9f00-07c9298186cb
+
+Feb 15, 2020 3:27:09 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:27:09 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 3:27:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:27:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:27:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: aab65456-035b-4330-8ac8-e6bea711e94a
+
+Feb 15, 2020 3:29:42 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:29:42 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:29:42 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 37432563-2757-40e2-8090-c2f606c7e2eb
+
+Feb 15, 2020 3:37:58 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:37:58 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 3:38:07 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:38:07 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:38:07 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 366b8c3d-73b7-4336-b380-081e917046c4
+
+Feb 15, 2020 3:38:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:38:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:38:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: a97ea699-0e1b-4934-8900-fb4e38b343f4
+
+Feb 15, 2020 3:40:45 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:40:45 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:40:45 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 0e246ec6-07c7-4e49-8bcb-f59e80db6ba5
+
+Feb 15, 2020 3:44:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:44:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:44:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: ff7e23de-0e31-4c7f-870f-364b6861dd1f
+
+Feb 15, 2020 3:46:10 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:46:10 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:46:10 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: e889eb55-d3db-4704-88bc-742f41fd1fe5
+
+Feb 15, 2020 3:48:39 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:48:39 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:48:39 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 04c24a5e-7546-4dab-9b43-febe587a9b8c
+
+Feb 15, 2020 3:49:01 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:49:01 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:49:01 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 1b9f7ebd-0af9-4ef3-a26a-f23ed288107b
+
+Feb 15, 2020 3:49:29 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:49:29 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:49:29 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: bada8fed-5580-41db-9b9c-56cc25750e9a
+
+Feb 15, 2020 3:50:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:50:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:50:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: a9525b60-11b4-4db3-8cee-b89c0092488c
+
+Feb 15, 2020 3:53:03 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:53:03 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 3:53:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:53:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:53:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 2b053915-5826-4810-83f2-186a252637d0
+
+Feb 15, 2020 3:54:11 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:54:11 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 3:54:18 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:54:18 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:54:18 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 179d9309-7cc2-4c05-af2e-6c7724e40a1b
+
+Feb 15, 2020 3:55:54 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:55:54 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:55:54 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 08c86f7b-1ed1-4a36-a417-568730fa0e71
+
+Feb 15, 2020 3:59:07 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:59:07 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 3:59:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 3:59:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 3:59:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 655ca806-00ce-4482-964f-40651b2b7758
+
+Feb 15, 2020 4:02:45 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:02:45 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 4:02:45 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: a7842ee2-121f-44cf-a2ec-4095ff216263
+
+Feb 15, 2020 4:07:25 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:07:25 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 4:07:25 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: a327f394-1401-4f0f-9808-18501e2d3368
+
+Feb 15, 2020 4:08:38 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:08:38 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 4:08:38 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: da7b8c7b-9510-4d12-885b-664cb3141e26
+
+Feb 15, 2020 4:10:35 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:10:35 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 4:10:35 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 93fa8c54-678a-4d2e-ad29-0994ae9f231e
+
+Feb 15, 2020 4:12:46 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:12:46 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 4:12:46 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 03a442fe-e685-4ff9-846b-88e9f10e91db
+
+Feb 15, 2020 4:15:00 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:15:00 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 4:15:00 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 127d7044-fa6d-4d0c-9a22-b3ca9df90898
+
+Feb 15, 2020 4:15:32 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:15:32 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 4:15:39 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:15:39 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 4:15:39 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: f1e76eed-5363-42f4-ab3f-f2bb02713786
+
+Feb 15, 2020 4:16:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:16:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 4:16:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 5882650a-d394-4892-9d71-7e1f294b0591
+
+Feb 15, 2020 4:17:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:17:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 4:17:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 9d474bc1-f877-4383-8290-47a4cd6ac0ed
+
+Feb 15, 2020 4:26:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:26:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 4:26:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:26:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 4:26:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 87c276e7-5d8a-4bc9-9241-1de1d3bb544a
+
+Feb 15, 2020 4:28:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:28:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 4:28:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: fd863850-a42f-4437-8fa1-72dae2499343
+
+Feb 15, 2020 4:38:01 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:38:01 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 4:38:01 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 68cbc4aa-2f30-4c8c-96a6-b1332c429eba
+
+Feb 15, 2020 4:41:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:41:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 4:41:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: f29bd243-b29a-402a-b052-928bb42417dc
+
+Feb 15, 2020 4:42:55 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 4:42:55 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 4:42:55 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 6dbc6f3c-2366-4f1c-aeb0-f70b826a9bb2
+
+Feb 15, 2020 5:26:12 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:26:12 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 5:26:12 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 47e3c823-dbac-48d2-a4fc-d4d8c594538e
+
+Feb 15, 2020 5:27:28 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:27:28 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 5:27:28 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: a6effb21-a128-4d11-8671-e0a2c8b3bc96
+
+Feb 15, 2020 5:28:50 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:28:50 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 5:28:50 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 9c51b27a-9fc0-40ca-b870-9843e8e7036e
+
+Feb 15, 2020 5:29:14 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:29:14 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 5:29:14 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 62a7c7fa-ab7d-4c13-a818-fac33f167966
+
+Feb 15, 2020 5:29:59 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:29:59 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 5:29:59 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 12d92578-a283-48c7-ac20-b32057e408c9
+
+Feb 15, 2020 5:30:42 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:30:42 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 5:30:42 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 35c7a102-6a68-468c-a3a5-19572eb3617a
+
+Feb 15, 2020 5:31:03 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:31:03 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 5:31:03 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 7e6342b8-4f9c-4fa4-a1a8-50249385013c
+
+Feb 15, 2020 5:36:34 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:36:34 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 5:36:34 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 2eb39461-6370-4481-be44-0e471b410096
+
+Feb 15, 2020 5:36:56 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:36:56 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 5:36:56 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 84d7e844-c61c-46ff-a081-f324aef5a6a8
+
+Feb 15, 2020 5:39:28 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:39:28 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 5:39:28 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 1721027d-f57e-4b03-88ca-46919cc2ba6f
+
+Feb 15, 2020 5:50:38 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:50:38 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 5:50:38 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 0bfc9a3e-152e-493e-8fa9-97f4037dbbf9
+
+Feb 15, 2020 5:51:59 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:51:59 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 5:51:59 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 299edebf-3532-4740-9668-5e250cd05b81
+
+Feb 15, 2020 5:54:19 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:54:19 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 5:54:27 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:54:27 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 5:54:27 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 7018dcab-af12-4a27-b3d6-62ac612b2f93
+
+Feb 15, 2020 5:58:29 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:58:29 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 5:58:35 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:58:35 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 5:58:35 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: e4178688-c232-4c7d-96c3-1e8720126a88
+
+Feb 15, 2020 5:59:20 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 5:59:20 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 5:59:20 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 74ff39bc-6f2f-4976-8f84-0516bd0a4175
+
+Feb 15, 2020 6:00:01 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 6:00:01 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 6:00:01 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 2a0249ed-5a85-4ea8-b6d6-4a4f06a9957d
+
+Feb 15, 2020 10:56:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 10:56:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 10:56:49 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Password for jamie updated.
+
+Feb 15, 2020 10:57:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 10:57:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 10:57:15 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: b1e20ae3-2e0d-4617-b131-3857032f1d60
+
+Feb 15, 2020 10:57:58 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 10:57:58 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 10:57:58 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 24a3d2fc-2f23-4c21-9038-dbbe9ba5fe00
+
+Feb 15, 2020 10:58:46 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 10:58:46 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 10:58:46 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: bddc33a2-0e96-4ff3-86fe-88aa1678700c
+
+Feb 15, 2020 10:59:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 10:59:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 10:59:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: ccfbcedf-9ea9-4c62-b94f-5bc21863cda3
+
+Feb 15, 2020 11:04:45 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:04:45 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:04:45 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: a56a43fc-2603-4cea-8913-d6c5836fabd2
+
+Feb 15, 2020 11:05:52 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:05:52 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:05:52 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 54d73d25-363f-47e6-8fa1-5f5d86eaaabf
+
+Feb 15, 2020 11:07:03 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:07:03 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:07:03 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: c64b1afd-0f98-482e-a9d0-6548a1ada990
+
+Feb 15, 2020 11:11:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:11:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:11:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 980114e2-5688-4641-a68f-b35cc8b4add7
+
+Feb 15, 2020 11:15:31 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:15:31 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:15:31 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 37e92d4c-7897-4568-a3e8-514f2c7a9bce
+
+Feb 15, 2020 11:15:48 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:15:48 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:15:48 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: e1b2e4e6-7e47-4252-b731-f8fb71780535
+
+Feb 15, 2020 11:16:14 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:16:14 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:16:14 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 7fdb59f4-ff78-4240-8bb7-2ed3d2673b4a
+
+Feb 15, 2020 11:17:18 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:17:18 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:17:18 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 9081aebb-4081-4593-965a-43235360624d
+
+Feb 15, 2020 11:17:43 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:17:43 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:17:43 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: e96e9517-46f6-4bc8-835e-058fadd3c07f
+
+Feb 15, 2020 11:17:59 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:17:59 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:17:59 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: eac12344-f051-400b-b853-6623c1b04193
+
+Feb 15, 2020 11:19:26 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:19:26 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:19:26 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 4746d58b-a1b3-44c9-afa4-27eaa3e06667
+
+Feb 15, 2020 11:20:36 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:20:36 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 11:20:38 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:20:38 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:20:38 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 4f3bdb9f-1815-45e5-93b9-6b06caf4ae6d
+
+Feb 15, 2020 11:21:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:21:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:21:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: ff84ba47-b4eb-4254-aa38-49256ab47b0f
+
+Feb 15, 2020 11:21:49 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:21:49 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:21:49 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 758c769e-bfe3-4143-a70a-b41a30b7d75e
+
+Feb 15, 2020 11:29:28 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:29:28 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:29:28 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 89973ca2-315f-44a7-b886-96279a4e61e2
+
+Feb 15, 2020 11:30:54 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:30:54 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:30:54 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 24ee9381-53dc-4ec6-b364-078903cb2d41
+
+Feb 15, 2020 11:32:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:32:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:32:17 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 17e4f11c-facd-463d-9037-6211a4f1b40a
+
+Feb 15, 2020 11:36:57 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:36:57 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 11:37:11 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:37:11 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:37:11 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: a0755d9a-3b3e-421f-9f79-7729732bcb40
+
+Feb 15, 2020 11:39:10 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:39:10 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:39:10 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 2ef2c22b-6903-453a-9ff2-10722f452b77
+
+Feb 15, 2020 11:39:42 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:39:42 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:39:42 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 2c906694-4fd6-4f0d-88bb-7c92266e3c4a
+
+Feb 15, 2020 11:41:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:41:02 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 11:41:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:41:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:41:16 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 8bbf22ad-cbf4-42e7-a540-a06a64b722c0
+
+Feb 15, 2020 11:43:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:43:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 15, 2020 11:43:56 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:43:56 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:43:56 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 5b078eb7-61df-4253-85ed-b810e960ca64
+
+Feb 15, 2020 11:46:09 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:46:09 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:46:09 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 68532ee8-7f8f-414b-8fd6-10eea51b03cd
+
+Feb 15, 2020 11:54:10 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:54:10 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:54:10 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: dd96ba83-460a-4427-b792-ac4e0a4b7257
+
+Feb 15, 2020 11:55:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:55:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:55:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 05d77bbc-818f-4e9b-aefa-83cf0a3b6b45
+
+Feb 15, 2020 11:56:54 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:56:54 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:56:54 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 2801172b-7c7a-4067-9a4d-ba318a8bcc31
+
+Feb 15, 2020 11:59:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:59:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:59:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 0fa06688-0eaa-4f2d-949e-059bc7c9dd05
+
+Feb 15, 2020 11:59:55 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 15, 2020 11:59:55 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 15, 2020 11:59:55 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 092de2a4-1b33-4727-8842-48b813bc10ad
+
+Feb 16, 2020 12:00:14 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:00:14 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:00:14 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 128b81ef-3b24-48e0-8922-55949fb2bd05
+
+Feb 16, 2020 12:02:38 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:02:38 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:02:38 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 10143ef6-b383-4d40-856a-3071c636805a
+
+Feb 16, 2020 12:02:53 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:02:53 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:02:53 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: c4ad9b30-ba3e-4eb9-9b9f-e1cb3cf9baa7
+
+Feb 16, 2020 12:06:40 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:06:40 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:06:40 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 44f8f68b-732a-430e-b559-0b3f50ea554e
+
+Feb 16, 2020 12:09:57 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:09:57 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:09:57 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: ca23879f-494a-4a36-a25c-f464a9afe050
+
+Feb 16, 2020 12:13:50 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:13:50 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:13:50 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: a4e61f16-16f3-4986-85c0-81b8a82a152a
+
+Feb 16, 2020 12:17:24 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:17:24 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:17:24 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 60e05d54-1f84-4db5-af9e-594c0e70a809
+
+Feb 16, 2020 12:18:00 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:18:00 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:18:00 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 87462dd9-2e86-4ede-b3be-4d7e26e72c8e
+
+Feb 16, 2020 12:18:38 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:18:38 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:18:38 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: bd6b8189-3b53-482b-bc50-171f65cb5262
+
+Feb 16, 2020 12:19:25 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:19:25 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:19:25 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 6d15ef4d-222b-4a45-8914-46e2a2fa720e
+
+Feb 16, 2020 12:21:15 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:21:15 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 16, 2020 12:21:24 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:21:24 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:21:24 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: b724b386-9a03-4a89-8918-011ea210fefe
+
+Feb 16, 2020 12:24:19 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:24:19 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Unsuccessful login for user: jamie
+ Reason: Bad login credentials.
+
+Feb 16, 2020 12:24:27 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:24:27 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:24:27 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 42681b9a-c031-484f-ae86-606dc4a14d47
+
+Feb 16, 2020 12:26:07 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:26:07 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:26:07 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: dbbb2343-f5fc-43c4-846a-868dab71511e
+
+Feb 16, 2020 12:28:23 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:28:23 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:28:23 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: f1516fc5-7dce-4a28-8a46-9694236bb001
+
+Feb 16, 2020 12:29:53 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:29:53 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:29:53 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 3c70fc1f-4aff-4dd9-b8b3-711c85f5b927
+
+Feb 16, 2020 12:30:28 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:30:28 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:30:28 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: 5e79193c-9bd2-4a3c-bfb8-b95d2527eff5
+
+Feb 16, 2020 12:31:12 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Received login request for user jamie
+
+Feb 16, 2020 12:31:12 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 User: jamie has successfully logged in. Creating token.
+
+Feb 16, 2020 12:31:12 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletSat Feb 15 12:22:07 GMT 2020 Issued token: df499110-354a-4387-aabb-871340d51986
 

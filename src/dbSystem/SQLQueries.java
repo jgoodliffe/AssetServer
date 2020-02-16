@@ -159,10 +159,14 @@ public class SQLQueries {
     }
 
     public void addUser(String username, String password, int uLevel) {
-        String sql = "INSERT INTO users VALUES ?,?,?;";
+        String sql = "INSERT INTO users VALUES ?,?,?,?;";
+
+        //Generate Salt
+        byte[] salt = new byte[16];
+        salt = PasswordHasher.getSalt();
 
         //Hash password
-        password = passwordHasher.hashPassword(password);
+        password = passwordHasher.hashPassword(password, salt);
 
         PreparedStatement psmt = null;
         try {
@@ -170,6 +174,7 @@ public class SQLQueries {
             psmt.setInt(1, uLevel);
             psmt.setString(2, username);
             psmt.setString(3, password);
+            psmt.setBytes(4, salt);
             psmt.executeQuery();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -187,19 +192,22 @@ public class SQLQueries {
         }
     }
 
-    public void changePassword(int id, String password){
-        String sql = "UPDATE users SET password=? WHERE userID=?;";
+    public void changePassword(int id, String password) {
+        String sql = "UPDATE users SET password=?, password_salt=? WHERE userID=?;";
 
+        //Generate Salt
+        byte[] salt = PasswordHasher.getSalt();
 
         //Hash new Password:
-        //password = passwordHasher.hashPassword(password);
+        password = passwordHasher.hashPassword(password, salt);
 
         try {
             conn.close();
             DataStore.getInstance().newConnection();
             conn = DataStore.getInstance().getConn();
             PreparedStatement psmt = conn.prepareStatement(sql);
-            psmt.setInt(2,id);
+            psmt.setInt(3, id);
+            psmt.setBytes(2, salt);
             psmt.setString(1, password);
             psmt.executeUpdate();
             //System.out.println("New Password set to: "+password);
@@ -352,17 +360,24 @@ public class SQLQueries {
      */
     public boolean checkUserCredentials(String username, String password) {
         //Hash Password first.
-        //password = passwordHasher.hashPassword(password);
+        byte[] salt = new byte[16];
         try {
+            //Get Password Salt
+            PreparedStatement p = conn.prepareStatement("SELECT password_salt FROM USERS WHERE username=?;");
+            p.setString(1, username);
+            ResultSet r = p.executeQuery();
+            if (r.next()) {
+                salt = r.getBytes(1);
+            }
+
+            password = passwordHasher.hashPassword(password, salt);
+
             PreparedStatement psmt = conn.prepareStatement("SELECT * FROM USERS WHERE username=? and password=?;");
             psmt.setString(1, username);
             psmt.setString(2, password);
             ResultSet rs = psmt.executeQuery();
-            if (rs.next()) {
-                System.out.println(rs.getString(3));
-                return true;
-            }
-            return false;
+            //System.out.println(rs.getString(3));
+            return rs.next();
         } catch (SQLException e){
             e.printStackTrace();
             return false;

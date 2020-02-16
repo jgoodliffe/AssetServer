@@ -11,16 +11,26 @@ import java.security.SecureRandom;
  */
 public class PasswordHasher {
 
-    SecureRandom random = new SecureRandom();
-    byte[] salt = new byte[16];
+    static SecureRandom random = new SecureRandom();
+    static byte[] salt = new byte[16];
     byte[] encryptedPasswordByteArray;
     String hashedPassword;
 
-    public String hashPassword(String rawPassword) {
-        random.nextBytes(salt);
+    public static byte[] getSalt() {
+        try {
+            random = SecureRandom.getInstance("SHA1PRNG");
+            random.nextBytes(salt);
+            return salt;
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public String hashPassword(String rawPassword, byte[] saltValue) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-512");
-            md.update(salt);
+            md.update(saltValue);
 
             encryptedPasswordByteArray = md.digest(rawPassword.getBytes(StandardCharsets.UTF_8));
 
