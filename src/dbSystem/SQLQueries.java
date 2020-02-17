@@ -511,4 +511,27 @@ public class SQLQueries {
         }
         return details;
     }
+
+    /**
+     * getIDForUsername - Returns the person ID for a given username.
+     * @param username
+     * @return
+     */
+    public String getIDForUsername(String username) {
+        String personID = "";
+
+        Integer userID = getUserID(username);
+
+        try{
+            PreparedStatement psmt = conn.prepareStatement("SELECT id from People WHERE uid=?;");
+            ResultSet rs = psmt.executeQuery();
+            if(rs.next()){
+                personID = Integer.toString(rs.getInt("id"));
+                return personID;
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return personID;
+    }
 }

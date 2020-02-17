@@ -1,47 +1,13 @@
-Feb 16, 2020 9:14:16 PM LoggingSystem.LoggingSystem <init>
+Feb 17, 2020 4:01:34 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Feb 16, 2020 9:14:16 PM LoggingSystem.LoggingSystem <init>
+Feb 17, 2020 4:01:34 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Feb 16, 2020 9:14:16 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerSun Feb 16 21:14:16 GMT 2020 New server instance.
+Feb 17, 2020 4:01:34 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerMon Feb 17 16:01:34 GMT 2020 New server instance.
 
-Feb 16, 2020 9:14:16 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerSun Feb 16 21:14:16 GMT 2020 main.Server successfully initialised.
+Feb 17, 2020 4:01:34 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerMon Feb 17 16:01:34 GMT 2020 main.Server successfully initialised.
 
-Feb 16, 2020 9:14:16 PM LoggingSystem.LoggingSystem infoMessage
-INFO: main.ServerSun Feb 16 21:14:16 GMT 2020 Connecting to datastore...
-
-Feb 16, 2020 9:15:27 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletSun Feb 16 21:14:16 GMT 2020 Received login request for user jamie
-
-Feb 16, 2020 9:15:27 PM LoggingSystem.LoggingSystem <init>
-INFO: Log Commenced
-Feb 16, 2020 9:15:27 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreSun Feb 16 21:15:27 GMT 2020 Found datastore Directory.
-
-Feb 16, 2020 9:15:27 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreSun Feb 16 21:15:27 GMT 2020 Running consistency check:
-
-Feb 16, 2020 9:15:27 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreSun Feb 16 21:15:27 GMT 2020 
-
-Consistency Report
- - users table exists
- - events table exists
- - assets table exists
- - people table exists
- - transport table exists
-
-
-Feb 16, 2020 9:15:27 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreSun Feb 16 21:15:27 GMT 2020 Passed DB Consistency check.
-
-Feb 16, 2020 9:15:27 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreSun Feb 16 21:15:27 GMT 2020 Connected to SQLite Database.
-
-Feb 16, 2020 9:15:27 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletSun Feb 16 21:14:16 GMT 2020 User: jamie has successfully logged in. Creating token.
-
-Feb 16, 2020 9:15:27 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletSun Feb 16 21:14:16 GMT 2020 Issued token: 62704fc3-926e-4353-a90a-d49378e2cb91
+Feb 17, 2020 4:01:34 PM LoggingSystem.LoggingSystem infoMessage
+INFO: main.ServerMon Feb 17 16:01:34 GMT 2020 Connecting to datastore...
 

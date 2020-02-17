@@ -126,6 +126,7 @@ public class LoginServlet extends HttpServlet {
 
 
                     String userLevel = DataStore.getInstance().getSqlQueries().getUserLevel(username);
+                    String personID = DataStore.getInstance().getSqlQueries().getIDForUsername(username);
                     JSONObject obj = new JSONObject();
 
 
@@ -134,6 +135,7 @@ public class LoginServlet extends HttpServlet {
                     obj.put("response-code", HttpStatus.OK_200);
                     obj.put("auth-token", authToken);
                     obj.put("user-level", userLevel);
+                    obj.put("person-id", personID);
                     resp.getWriter().write(obj.toString());
 
                 } else {
