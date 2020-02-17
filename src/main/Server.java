@@ -3,7 +3,6 @@ package main;
 import GUI.LogViewController;
 import GUI.mainViewController;
 import LoggingSystem.LoggingSystem;
-import dbSystem.DataStore;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 
 import java.io.DataInputStream;
@@ -57,6 +56,11 @@ public class Server extends Thread {
             jettyContextHandler = new ServletContextHandler(jettyServer, "/");
             jettyContextHandler.addServlet(servlets.PersonServlet.class, "/person/*");
             jettyContextHandler.addServlet(servlets.LoginServlet.class, "/login/*");
+            jettyContextHandler.addServlet(servlets.HomeServlet.class, "/home/*");
+            jettyContextHandler.addServlet(servlets.DashboardServlet.class, "/dashboard/*");
+            jettyContextHandler.addServlet(servlets.UserServlet.class, "/user/*");
+            jettyContextHandler.addServlet(servlets.JobServlet.class, "/job/*");
+            jettyContextHandler.addServlet(servlets.AssetServlet.class, "/asset/*");
             //this.run();
         } catch (IOException e) {
             viewController.showAlert("Error initialising server", e.getMessage());
@@ -91,6 +95,13 @@ public class Server extends Thread {
             jettyContextHandler = new ServletContextHandler(jettyServer, "/");
             jettyContextHandler.addServlet(servlets.PersonServlet.class, "/person/*");
             jettyContextHandler.addServlet(servlets.LoginServlet.class, "/login/*");
+            jettyContextHandler.addServlet(servlets.HomeServlet.class, "/home/*");
+            jettyContextHandler.addServlet(servlets.DashboardServlet.class, "/dashboard/*");
+            jettyContextHandler.addServlet(servlets.UserServlet.class, "/user/*");
+            jettyContextHandler.addServlet(servlets.JobServlet.class, "/job/*");
+            jettyContextHandler.addServlet(servlets.AssetServlet.class, "/asset/*");
+
+
             //this.run();
         } catch (IOException e) {
             if(!isRunningOnCLI){
