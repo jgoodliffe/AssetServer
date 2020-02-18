@@ -37,6 +37,20 @@ public class TokenStore {
         return null;
     }
 
+    /**
+     * Checks a token and if unexpired, returns true
+     * @param token - the token string
+     * @return - true/false if the token is valid
+     */
+    public boolean checkToken(String token){
+        if(tokenMap.containsKey(token)){
+            if((tokenMap.get(token).expirationTime > System.currentTimeMillis())){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public long getExpiryTime(String token) {
         if (tokenMap.containsKey(token)) {
             if (tokenMap.get(token).expirationTime > System.currentTimeMillis()) {

@@ -62,8 +62,13 @@ public class LoginServlet extends HttpServlet {
 
                 int id = DataStore.getInstance().getSqlQueries().getUserID(username);
 
-                DataStore.getInstance().getSqlQueries().changePassword(id, newPassword);
-
+                Boolean changedPassword = DataStore.getInstance().getSqlQueries().changePassword(id, newPassword);
+                if(!changedPassword){
+                    resp.setStatus(HttpStatus.INTERNAL_SERVER_ERROR_500);
+                    resp.setContentType("application/json");
+                    resp.setCharacterEncoding("UTF-8");
+                    return;
+                }
                 //Send Email
                 SendEmail sender = new SendEmail();
 
@@ -107,7 +112,6 @@ public class LoginServlet extends HttpServlet {
                 if(DataStore.getInstance().getSqlQueries().checkUserCredentials(username, password)){
                     //Login Successful
                     log.infoMessage("User: " + username + " has successfully logged in. Creating token.");
-                    //TODO: Complete Tokenize - Check if user already has a token!!
                     resp.setStatus(HttpStatus.OK_200);
                     resp.setContentType("application/json");
                     resp.setCharacterEncoding("UTF-8");
@@ -137,6 +141,7 @@ public class LoginServlet extends HttpServlet {
                     obj.put("user-level", userLevel);
                     obj.put("person-id", personID);
                     resp.getWriter().write(obj.toString());
+                    return;
 
                 } else {
                     //Login Unsuccessful.
@@ -151,6 +156,7 @@ public class LoginServlet extends HttpServlet {
                     err.put("error-type", "Incorrect login credentials.");
                     err.put("response-code", HttpStatus.BAD_REQUEST_400);
                     resp.getWriter().write(err.toString());
+                    return;
                 }
             } else{
                 log.infoMessage("Invalid request received (Bad auth header)");

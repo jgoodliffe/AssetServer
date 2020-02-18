@@ -1,5 +1,7 @@
 package servlets;
 
+import LoggingSystem.LoggingSystem;
+import authentication.TokenStore;
 import dbSystem.DataStore;
 import org.eclipse.jetty.http.HttpStatus;
 import org.json.JSONArray;
@@ -15,12 +17,32 @@ import javax.servlet.http.HttpServletResponse;
 
     public class PersonServlet extends HttpServlet {
 
+        private LoggingSystem log;
+
+        @Override
+        public void init() throws ServletException {
+            this.log = LoggingSystem.getInstance();
+        }
+
         @Override
         public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
             String requestUrl = request.getRequestURI();
+
+
+            //Check if the token is valid.
+            if(!TokenStore.getInstance().checkToken(request.getHeader("token"))){
+                response.setStatus(HttpStatus.BAD_REQUEST_400);
+                response.setContentType("application/json");
+                response.setCharacterEncoding("UTF-8");
+                log.infoMessage("Received an invalid Request - No Token.");
+                return;
+            }
+
+            log.infoMessage("Received a Valid Request.");
             response.setStatus(HttpStatus.OK_200);
             response.setContentType("application/json");
             response.setCharacterEncoding("UTF-8");
+
             try{
                 int id = Integer.parseInt(requestUrl.substring("/person/".length())); //Get User ID to look up
                 JSONObject json = DataStore.getInstance().getSqlQueries().getPerson(id);

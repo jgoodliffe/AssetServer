@@ -192,7 +192,7 @@ public class SQLQueries {
         }
     }
 
-    public void changePassword(int id, String password) {
+    public boolean changePassword(int id, String password) {
         String sql = "UPDATE users SET password=?, password_salt=? WHERE userID=?;";
 
         //Generate Salt
@@ -210,9 +210,11 @@ public class SQLQueries {
             psmt.setBytes(2, salt);
             psmt.setString(1, password);
             psmt.executeUpdate();
+            return true;
             //System.out.println("New Password set to: "+password);
         } catch (SQLException e) {
             e.printStackTrace();
+            return false;
         }
         finally {
             if (conn != null) {
@@ -296,14 +298,15 @@ public class SQLQueries {
     /**
      * getPerson
      * @param id - the id of the requested user
-     * @return - all informatiomn about the person
+     * @return - all information about the person
      */
     public JSONObject getPerson(int id){
-        String sql = "SELECT * FROM people WHERE id="+id+";";
+        String sql = "SELECT * FROM people WHERE personID=?;";
         ResultSet rs = null;
         JSONObject person = new JSONObject();
         try {
             PreparedStatement psmt = conn.prepareStatement(sql);
+            psmt.setInt(1,id);
             rs = psmt.executeQuery();
             person = JSONConverter.convertToJSONObject(rs);
             return person;
@@ -377,7 +380,11 @@ public class SQLQueries {
             psmt.setString(2, password);
             ResultSet rs = psmt.executeQuery();
             //System.out.println(rs.getString(3));
-            return rs.next();
+            if(rs.next()){
+                return true;
+            } else{
+                return false;
+            }
         } catch (SQLException e){
             e.printStackTrace();
             return false;
@@ -519,18 +526,27 @@ public class SQLQueries {
      */
     public String getIDForUsername(String username) {
         String personID = "";
-
-        Integer userID = getUserID(username);
-
         try{
-            PreparedStatement psmt = conn.prepareStatement("SELECT id from People WHERE uid=?;");
+            PreparedStatement psmt = conn.prepareStatement("SELECT people.personID FROM people INNER JOIN users u on people.userID = u.userID where username=?;");
+            psmt.setString(1,username);
             ResultSet rs = psmt.executeQuery();
             if(rs.next()){
-                personID = Integer.toString(rs.getInt("id"));
+                personID = Integer.toString(rs.getInt(1));
                 return personID;
             }
         }catch (SQLException e){
             e.printStackTrace();
+        }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
         }
         return personID;
     }

@@ -61,6 +61,7 @@ public class Server extends Thread {
             jettyContextHandler.addServlet(servlets.UserServlet.class, "/user/*");
             jettyContextHandler.addServlet(servlets.JobServlet.class, "/job/*");
             jettyContextHandler.addServlet(servlets.AssetServlet.class, "/asset/*");
+            jettyContextHandler.addServlet(servlets.UtilityServlet.class, "/utilities/*");
             //this.run();
         } catch (IOException e) {
             viewController.showAlert("Error initialising server", e.getMessage());
@@ -100,7 +101,7 @@ public class Server extends Thread {
             jettyContextHandler.addServlet(servlets.UserServlet.class, "/user/*");
             jettyContextHandler.addServlet(servlets.JobServlet.class, "/job/*");
             jettyContextHandler.addServlet(servlets.AssetServlet.class, "/asset/*");
-
+            jettyContextHandler.addServlet(servlets.UtilityServlet.class, "/utilities/*");
 
             //this.run();
         } catch (IOException e) {
