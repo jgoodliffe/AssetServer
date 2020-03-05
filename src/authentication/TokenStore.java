@@ -51,6 +51,13 @@ public class TokenStore {
         return false;
     }
 
+    public boolean tokenExpired(String token){
+        if((tokenMap.get(token).expirationTime < System.currentTimeMillis())){
+            return true;
+        }
+        return false;
+    }
+
     public long getExpiryTime(String token) {
         if (tokenMap.containsKey(token)) {
             if (tokenMap.get(token).expirationTime > System.currentTimeMillis()) {

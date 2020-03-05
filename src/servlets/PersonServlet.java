@@ -34,7 +34,10 @@ import javax.servlet.http.HttpServletResponse;
                 response.setStatus(HttpStatus.BAD_REQUEST_400);
                 response.setContentType("application/json");
                 response.setCharacterEncoding("UTF-8");
-                log.infoMessage("Received an invalid Request - No Token.");
+                log.infoMessage("Received an invalid Request - Invalid Token.");
+                JSONObject json = new JSONObject();
+                json.put("auth", "false");
+                response.getOutputStream().println(json.toString());
                 return;
             }
 

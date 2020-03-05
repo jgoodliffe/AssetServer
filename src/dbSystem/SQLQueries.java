@@ -5,7 +5,10 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.sql.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -549,5 +552,90 @@ public class SQLQueries {
             }
         }
         return personID;
+    }
+
+    /**
+     * Returns a specific event based on the id provided
+     * @param id - the event id
+     * @return - the event information as JSON Object
+     */
+    public JSONObject getEvent(int id) {
+        JSONArray formattedEvent = new JSONArray();
+        try{
+            PreparedStatement psmt = conn.prepareStatement("SELECT * FROM events WHERE id=?;");
+            psmt.setInt(1, id);
+            ResultSet rs = psmt.executeQuery();
+            if(rs.next()){
+                int total_rows = rs.getMetaData().getColumnCount();
+                for (int i = 0; i < total_rows; i++) {
+                    JSONObject obj = new JSONObject();
+                    obj.put(rs.getMetaData().getColumnLabel(i + 1)
+                            .toLowerCase(), rs.getObject(i + 1));
+                    formattedEvent.put(obj);
+                }
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+            return new JSONObject(formattedEvent);
+        }
+        return new JSONObject();
+    }
+
+    /**
+     * Returns all upcoming events over a year
+     * @return - the event information as JSON Object
+     */
+    public JSONArray getUpcomingEvents() {
+        JSONArray allEvents = new JSONArray();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        Date today = Calendar.getInstance().getTime();
+        String date = dateFormat.format(today);
+        System.out.println(date);
+        try{
+            PreparedStatement psmt = conn.prepareStatement("SELECT * FROM events WHERE datetime(startDate)>datetime('now') OR datetime(endDate)>datetime('now')");
+            ResultSet rs = psmt.executeQuery();
+            while(rs.next()){
+                JSONObject event = new JSONObject();
+                int total_rows = rs.getMetaData().getColumnCount();
+                for (int i = 0; i < total_rows; i++) {
+                    JSONObject obj = new JSONObject();
+                    event.put(rs.getMetaData().getColumnLabel(i + 1)
+                            .toLowerCase(), rs.getObject(i + 1));
+                }
+                allEvents.put(event);
+            }
+            //System.out.println(allEvents.toString());
+            return allEvents;
+        } catch (SQLException e){
+            e.printStackTrace();
+            return allEvents;
+        }
+    }
+
+    public JSONArray getAllEvents() {
+        JSONArray allEvents = new JSONArray();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        Date today = Calendar.getInstance().getTime();
+        String date = dateFormat.format(today);
+        System.out.println(date);
+        try{
+            PreparedStatement psmt = conn.prepareStatement("SELECT * FROM events");
+            ResultSet rs = psmt.executeQuery();
+            while(rs.next()){
+                JSONObject event = new JSONObject();
+                int total_rows = rs.getMetaData().getColumnCount();
+                for (int i = 0; i < total_rows; i++) {
+                    JSONObject obj = new JSONObject();
+                    event.put(rs.getMetaData().getColumnLabel(i + 1)
+                            .toLowerCase(), rs.getObject(i + 1));
+                }
+                allEvents.put(event);
+            }
+            //System.out.println(allEvents.toString());
+            return allEvents;
+        } catch (SQLException e){
+            e.printStackTrace();
+            return allEvents;
+        }
     }
 }
