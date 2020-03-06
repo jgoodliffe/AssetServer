@@ -1,13 +1,13 @@
-Mar 05, 2020 8:41:38 PM LoggingSystem.LoggingSystem <init>
+Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Mar 05, 2020 8:41:38 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Mar 05 20:41:38 GMT 2020 Found datastore Directory.
+Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreFri Mar 06 00:41:22 GMT 2020 Found datastore Directory.
 
-Mar 05, 2020 8:41:38 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Mar 05 20:41:38 GMT 2020 Running consistency check:
+Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreFri Mar 06 00:41:22 GMT 2020 Running consistency check:
 
-Mar 05, 2020 8:41:38 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Mar 05 20:41:38 GMT 2020 
+Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreFri Mar 06 00:41:22 GMT 2020 
 
 Consistency Report
  - users table exists
@@ -17,372 +17,306 @@ Consistency Report
  - transport table exists
 
 
-Mar 05, 2020 8:41:38 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Mar 05 20:41:38 GMT 2020 Passed DB Consistency check.
+Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreFri Mar 06 00:41:22 GMT 2020 Passed DB Consistency check.
 
-Mar 05, 2020 8:41:38 PM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreThu Mar 05 20:41:38 GMT 2020 Connected to SQLite Database.
+Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreFri Mar 06 00:41:22 GMT 2020 Connected to SQLite Database.
 
-Mar 05, 2020 8:41:38 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 User: jamie has successfully logged in. Creating token.
+Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 User: jamie has successfully logged in. Creating token.
 
-Mar 05, 2020 8:41:38 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Issued token: d671c2f0-2ea1-4387-a440-24606c73c49b
+Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Issued token: d830918e-1f64-406f-bf91-d8fea6b84345
 
-Mar 05, 2020 8:41:39 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:39 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:41 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:41:24 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:41 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:41:24 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
 
-Mar 05, 2020 8:41:41 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:41:24 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:41 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:41:24 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
 
-Mar 05, 2020 8:41:43 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:41:28 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:43 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:41:28 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:41:43 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:41:32 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Successfully deleted event.
 
-Mar 05, 2020 8:41:43 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:41:32 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:41:32 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:41:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:41:35 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Successfully deleted event.
 
-Mar 05, 2020 8:41:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:41:36 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:41:36 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:41:45 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:41:40 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Successfully deleted event.
 
-Mar 05, 2020 8:41:45 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:41:40 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:45 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:41:40 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:41:45 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:41:56 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Successfully added event.
 
-Mar 05, 2020 8:41:46 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:41:57 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:46 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:41:57 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:41:47 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:42:03 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Successfully deleted event.
 
-Mar 05, 2020 8:41:47 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:42:03 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:48 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:42:03 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:41:48 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:42:54 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Successfully deleted event.
 
-Mar 05, 2020 8:41:48 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:42:54 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:48 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:42:54 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:41:49 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:42:57 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Successfully deleted event.
 
-Mar 05, 2020 8:41:49 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:42:57 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:50 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:42:57 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:41:50 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:42:58 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:50 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:42:58 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
 
-Mar 05, 2020 8:41:50 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:42:59 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:51 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:42:59 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:41:51 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:43:00 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:52 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:43:00 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
 
-Mar 05, 2020 8:41:52 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:43:01 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:53 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:43:01 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:41:53 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:43:02 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:41:54 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:43:02 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
 
-Mar 05, 2020 8:41:54 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:43:03 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:00 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:43:03 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:00 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:43:03 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:01 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:43:03 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
 
-Mar 05, 2020 8:42:01 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:43:05 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:02 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:43:05 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:02 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:43:06 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:03 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:43:06 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
 
-Mar 05, 2020 8:42:03 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:44:31 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:04 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:31 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:04 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:44:31 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:05 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:31 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
 
-Mar 05, 2020 8:42:05 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:44:32 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:06 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:32 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:06 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:44:33 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:06 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:33 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
 
-Mar 05, 2020 8:42:06 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:44:34 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:07 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:34 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:07 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:44:39 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:09 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:39 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
 
-Mar 05, 2020 8:42:09 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:44:40 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:09 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:40 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:09 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:44:41 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:10 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:41 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
 
-Mar 05, 2020 8:42:10 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:41 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:12 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:41 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:12 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:44:42 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:14 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:42 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
 
-Mar 05, 2020 8:42:14 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:44:43 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received login request for user jamie
+Mar 06, 2020 12:44:43 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 User: jamie has successfully logged in. Creating token.
+Mar 06, 2020 12:44:44 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Issued token: 3d30c049-cdb4-4de3-ad90-8b22a97d83d8
+Mar 06, 2020 12:44:44 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
 
-Mar 05, 2020 8:42:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:45 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:44 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:45 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:46 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:52 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:46 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:44:52 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:46 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:54 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:46 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:44:54 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:47 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:57 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:47 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:44:57 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:49 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:44:59 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:49 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:44:59 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:50 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:45:01 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:50 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:45:02 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:50 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:45:03 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:50 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:45:03 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:51 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:45:15 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:51 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:45:17 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:52 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:45:17 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:52 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:45:46 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:53 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:45:46 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
 
-Mar 05, 2020 8:42:53 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:45:47 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:54 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:45:47 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:54 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:46:15 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:54 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:46:15 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 
-Mar 05, 2020 8:42:54 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:46:17 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:55 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:46:19 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
 
-Mar 05, 2020 8:42:55 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
-
-Mar 05, 2020 8:42:55 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
-
-Mar 05, 2020 8:42:55 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
-
-Mar 05, 2020 8:42:57 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
-
-Mar 05, 2020 8:42:57 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
-
-Mar 05, 2020 8:42:57 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
-
-Mar 05, 2020 8:42:57 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
-
-Mar 05, 2020 8:42:58 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
-
-Mar 05, 2020 8:42:58 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
-
-Mar 05, 2020 8:42:59 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
-
-Mar 05, 2020 8:42:59 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
-
-Mar 05, 2020 8:43:00 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
-
-Mar 05, 2020 8:43:00 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
-
-Mar 05, 2020 8:43:01 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
-
-Mar 05, 2020 8:43:01 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
-
-Mar 05, 2020 8:43:04 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
-
-Mar 05, 2020 8:43:04 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
-
-Mar 05, 2020 8:43:05 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
-
-Mar 05, 2020 8:43:05 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
-
-Mar 05, 2020 8:43:05 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
-
-Mar 05, 2020 8:43:05 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Upcoming Events requested...
-
-Mar 05, 2020 8:43:06 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 Received a Valid Request.
-
-Mar 05, 2020 8:43:06 PM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletThu Mar 05 20:41:33 GMT 2020 All Events requested...
+Mar 06, 2020 12:46:19 AM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
 

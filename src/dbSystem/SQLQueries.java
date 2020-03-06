@@ -315,6 +315,7 @@ public class SQLQueries {
             return person;
         } catch (SQLException e) {
             e.printStackTrace();
+            return new JSONObject();
         }
         finally {
             if (conn != null) {
@@ -327,8 +328,7 @@ public class SQLQueries {
                 }
             }
         }
-
-        return person;
+        //return person;
     }
 
     public JSONArray getAllPeople(){
@@ -552,6 +552,7 @@ public class SQLQueries {
             }
         }
         return personID;
+
     }
 
     /**
@@ -574,11 +575,23 @@ public class SQLQueries {
                     formattedEvent.put(obj);
                 }
             }
+            return new JSONObject();
         } catch (SQLException e){
             e.printStackTrace();
             return new JSONObject(formattedEvent);
         }
-        return new JSONObject();
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
+        }
+
     }
 
     /**
@@ -610,6 +623,17 @@ public class SQLQueries {
             e.printStackTrace();
             return allEvents;
         }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
+        }
     }
 
     public JSONArray getAllEvents() {
@@ -617,7 +641,7 @@ public class SQLQueries {
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Date today = Calendar.getInstance().getTime();
         String date = dateFormat.format(today);
-        System.out.println(date);
+        //System.out.println(date);
         try{
             PreparedStatement psmt = conn.prepareStatement("SELECT * FROM events");
             ResultSet rs = psmt.executeQuery();
@@ -636,6 +660,70 @@ public class SQLQueries {
         } catch (SQLException e){
             e.printStackTrace();
             return allEvents;
+        }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
+        }
+    }
+
+    public boolean deleteEvent(int eventID) {
+        try{
+            PreparedStatement p = conn.prepareStatement("DELETE FROM events WHERE id=?;");
+            p.setInt(1,eventID);
+            p.executeUpdate();
+            return true;
+        } catch (SQLException e){
+            e.printStackTrace();
+            return false;
+        }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
+        }
+    }
+
+    public boolean addEvent(String eventName, String startDate, String endDate, String notes, String projectManager) {
+        System.out.println(startDate);
+        try {
+            String sql = "INSERT INTO events(name, startDate, endDate, notes, type, projectManager) VALUES (?,?,?,?,?,?);";
+            PreparedStatement p = conn.prepareStatement(sql);
+            p.setString(1,eventName);
+            p.setString(2,startDate);
+            p.setString(3,endDate);
+            p.setString(4,notes);
+            p.setString(5," ");
+            p.setInt(6,Integer.parseInt(projectManager));
+            p.execute();
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
         }
     }
 }

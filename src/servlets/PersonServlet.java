@@ -49,6 +49,7 @@ import javax.servlet.http.HttpServletResponse;
             try{
                 int id = Integer.parseInt(requestUrl.substring("/person/".length())); //Get User ID to look up
                 JSONObject json = DataStore.getInstance().getSqlQueries().getPerson(id);
+                json.put("response-code", HttpStatus.OK_200);
                 if(json!= null){
                     response.getOutputStream().println(json.toString());
                 } else{
@@ -59,6 +60,7 @@ import javax.servlet.http.HttpServletResponse;
                 if(requestUrl.substring("/person/".length()).equals("all")){
                     JSONObject json = new JSONObject();
                     json.put("people",DataStore.getInstance().getSqlQueries().getAllPeople());
+                    json.put("response-code", HttpStatus.OK_200);
                     if(json!= null){
                         response.getOutputStream().println(json.toString());
                     } else{
