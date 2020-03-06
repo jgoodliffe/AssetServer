@@ -5,6 +5,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.EnumSet;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import LoggingSystem.LoggingSystem;
 
@@ -20,6 +25,14 @@ public class DataStore {
     private SQLQueries sqlQueries;
     private String url;
     private String dbDir;
+
+    private enum eventTypes{
+        Corporate,
+        Festival,
+        Charity,
+        Other,
+        Wedding
+    }
 
     private static DataStore instance = new DataStore();
     public static DataStore getInstance(){
@@ -59,6 +72,12 @@ public class DataStore {
         return sqlQueries;
     }
 
+    public static List<String> getEventTypes(){
+        //List<Enum> enumValues = ArrayList<Enum>(EnumSet.allOf(Enum.class));
+        return Stream.of(eventTypes.values())
+                .map(Enum::name)
+                .collect(Collectors.toList());
+    }
 
     /**
      * createTableWithParameters

@@ -144,12 +144,13 @@ public class EventServlet extends HttpServlet {
 
                 case "create":
                     String eventName = request.getParameter("eventName");
+                    String eventType = request.getParameter("eventType");
                     String startTime = request.getParameter("startTime");
                     String finishTime = request.getParameter("finishTime");
                     String notes = request.getParameter("notes");
                     String projectManager = request.getParameter("projectManager");
 
-                    if(DataStore.getInstance().getSqlQueries().addEvent(eventName, startTime, finishTime, notes, projectManager)) {
+                    if(DataStore.getInstance().getSqlQueries().addEvent(eventName, eventType, startTime, finishTime, notes, projectManager)) {
                         JSONObject obj = new JSONObject();
                         obj.put("request-received", "true");
                         obj.put("error-type", "none");

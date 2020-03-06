@@ -4,6 +4,8 @@ import LoggingSystem.LoggingSystem;
 import authentication.TokenStore;
 import dbSystem.DataStore;
 import org.eclipse.jetty.http.HttpStatus;
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import javax.servlet.ServletException;
@@ -13,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.net.http.HttpResponse;
 import java.util.Base64;
+import java.util.List;
 
 public class UtilityServlet extends HttpServlet {
     private LoggingSystem log;
@@ -58,13 +61,41 @@ public class UtilityServlet extends HttpServlet {
         log.infoMessage("Received a Valid Request - "+utility);
         if(utility.equals("changePassword")){
             changePasswordHandler(request.getHeader("currentPassword"), request.getHeader("newPassword"), request.getHeader("token"), response);
-        } else{
+        } else if(utility.equals("eventTypes")){
+            getEventTypesHandler(request, response);
+        }else{
             response.setStatus(HttpStatus.NOT_IMPLEMENTED_501);
             response.setContentType("application/json");
             response.setCharacterEncoding("UTF-8");
             log.infoMessage("Received an invalid Request - Unimplemented Utility");
             return;
         }
+    }
+
+    /**
+     * getEventTypes - Returns a list of event types.
+     * @param request
+     * @param response
+     */
+    private void getEventTypesHandler(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        JSONObject json = new JSONObject();
+        JSONArray eventTypesArray = new JSONArray();
+        List<String> eventTypesList = DataStore.getEventTypes();
+        for (int i = 0; i < eventTypesList.size(); i++) {
+            eventTypesArray.put(eventTypesList.get(i));
+        }
+        try {
+            log.infoMessage("Received a Valid Request.");
+            response.setStatus(HttpStatus.OK_200);
+            response.setContentType("application/json");
+            response.setCharacterEncoding("UTF-8");
+            json.put("event-types", eventTypesArray);
+            json.put("response-code", HttpStatus.OK_200);
+            response.getOutputStream().println(json.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
     }
 
     /**

@@ -1,13 +1,13 @@
-Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem <init>
+Mar 06, 2020 12:50:20 PM LoggingSystem.LoggingSystem <init>
 INFO: Log Commenced
-Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreFri Mar 06 00:41:22 GMT 2020 Found datastore Directory.
+Mar 06, 2020 12:50:20 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreFri Mar 06 12:50:20 GMT 2020 Found datastore Directory.
 
-Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreFri Mar 06 00:41:22 GMT 2020 Running consistency check:
+Mar 06, 2020 12:50:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreFri Mar 06 12:50:20 GMT 2020 Running consistency check:
 
-Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreFri Mar 06 00:41:22 GMT 2020 
+Mar 06, 2020 12:50:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreFri Mar 06 12:50:20 GMT 2020 
 
 Consistency Report
  - users table exists
@@ -17,306 +17,177 @@ Consistency Report
  - transport table exists
 
 
-Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreFri Mar 06 00:41:22 GMT 2020 Passed DB Consistency check.
+Mar 06, 2020 12:50:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreFri Mar 06 12:50:20 GMT 2020 Passed DB Consistency check.
 
-Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
-INFO: dbSystem.DataStoreFri Mar 06 00:41:22 GMT 2020 Connected to SQLite Database.
+Mar 06, 2020 12:50:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: dbSystem.DataStoreFri Mar 06 12:50:20 GMT 2020 Connected to SQLite Database.
 
-Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 User: jamie has successfully logged in. Creating token.
+Mar 06, 2020 12:50:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 User: jamie has successfully logged in. Creating token.
 
-Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Issued token: d830918e-1f64-406f-bf91-d8fea6b84345
+Mar 06, 2020 12:50:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Issued token: 1ab50638-b744-4b8d-9bf8-3f748f1813f7
 
-Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:50:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:41:22 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:50:21 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:41:24 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:50:22 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:41:24 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:50:22 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Upcoming Events requested...
 
-Mar 06, 2020 12:41:24 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:50:22 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:41:24 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:50:22 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Upcoming Events requested...
 
-Mar 06, 2020 12:41:28 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:50:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Request - ASSETS
 
-Mar 06, 2020 12:41:28 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
+Mar 06, 2020 12:50:24 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Returning ASSET Categories.
 
-Mar 06, 2020 12:41:32 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Successfully deleted event.
+Mar 06, 2020 12:51:08 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received login request for user jamie
 
-Mar 06, 2020 12:41:32 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:51:08 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 User: jamie has successfully logged in. Creating token.
 
-Mar 06, 2020 12:41:32 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
+Mar 06, 2020 12:51:08 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Issued token: ac4f10a2-2547-4eb2-a025-c2300a51b5ff
 
-Mar 06, 2020 12:41:35 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Successfully deleted event.
+Mar 06, 2020 12:51:08 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:41:36 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:51:08 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:41:36 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
+Mar 06, 2020 12:51:09 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:41:40 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Successfully deleted event.
+Mar 06, 2020 12:51:09 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Upcoming Events requested...
 
-Mar 06, 2020 12:41:40 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:51:09 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:41:40 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
+Mar 06, 2020 12:51:09 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Upcoming Events requested...
 
-Mar 06, 2020 12:41:56 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Successfully added event.
+Mar 06, 2020 12:51:11 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Request - ASSETS
 
-Mar 06, 2020 12:41:57 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:51:11 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Returning ASSET Categories.
 
-Mar 06, 2020 12:41:57 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
+Mar 06, 2020 12:52:52 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received login request for user jamie
 
-Mar 06, 2020 12:42:03 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Successfully deleted event.
+Mar 06, 2020 12:52:52 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 User: jamie has successfully logged in. Creating token.
 
-Mar 06, 2020 12:42:03 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:52:52 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Issued token: 596b20bf-96e3-460a-80b6-d4c0352df4de
 
-Mar 06, 2020 12:42:03 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
+Mar 06, 2020 12:52:52 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:42:54 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Successfully deleted event.
+Mar 06, 2020 12:52:52 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:42:54 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:52:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:42:54 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
+Mar 06, 2020 12:52:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Upcoming Events requested...
 
-Mar 06, 2020 12:42:57 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Successfully deleted event.
+Mar 06, 2020 12:52:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:42:57 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:52:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Upcoming Events requested...
 
-Mar 06, 2020 12:42:57 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
+Mar 06, 2020 12:52:55 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Request - ASSETS
 
-Mar 06, 2020 12:42:58 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:52:55 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Returning ASSET Categories.
 
-Mar 06, 2020 12:42:58 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:55:50 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received login request for user jamie
 
-Mar 06, 2020 12:42:59 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:55:50 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 User: jamie has successfully logged in. Creating token.
 
-Mar 06, 2020 12:42:59 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
+Mar 06, 2020 12:55:50 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Issued token: 98d998ee-96e9-4e9e-b04e-060b29f1b180
 
-Mar 06, 2020 12:43:00 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:55:50 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:43:00 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:55:50 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:43:01 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:55:51 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:43:01 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
+Mar 06, 2020 12:55:51 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Upcoming Events requested...
 
-Mar 06, 2020 12:43:02 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:55:52 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:43:02 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:55:52 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Upcoming Events requested...
 
-Mar 06, 2020 12:43:03 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:55:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Request - ASSETS
 
-Mar 06, 2020 12:43:03 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
+Mar 06, 2020 12:55:53 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Returning ASSET Categories.
 
-Mar 06, 2020 12:43:03 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:56:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received login request for user jamie
 
-Mar 06, 2020 12:43:03 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:56:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 User: jamie has successfully logged in. Creating token.
 
-Mar 06, 2020 12:43:05 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:56:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Issued token: 6ccc79ec-d85a-4a26-a09d-aa0e21f394a0
 
-Mar 06, 2020 12:43:05 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
+Mar 06, 2020 12:56:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:43:06 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:56:47 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:43:06 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:56:49 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:44:31 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:56:49 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Upcoming Events requested...
 
-Mar 06, 2020 12:44:31 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
+Mar 06, 2020 12:56:49 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Valid Request.
 
-Mar 06, 2020 12:44:31 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:56:49 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Upcoming Events requested...
 
-Mar 06, 2020 12:44:31 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
+Mar 06, 2020 12:56:51 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Request - ASSETS
 
-Mar 06, 2020 12:44:32 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
+Mar 06, 2020 12:56:51 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Returning ASSET Categories.
 
-Mar 06, 2020 12:44:32 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
+Mar 06, 2020 12:58:27 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Received a Request - ASSETS
 
-Mar 06, 2020 12:44:33 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:44:33 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
-
-Mar 06, 2020 12:44:34 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:44:34 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
-
-Mar 06, 2020 12:44:39 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:44:39 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
-
-Mar 06, 2020 12:44:40 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:44:40 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
-
-Mar 06, 2020 12:44:41 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:44:41 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
-
-Mar 06, 2020 12:44:41 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:44:41 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
-
-Mar 06, 2020 12:44:42 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:44:42 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
-
-Mar 06, 2020 12:44:43 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:44:43 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
-
-Mar 06, 2020 12:44:44 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:44:44 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
-
-Mar 06, 2020 12:44:45 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:44:45 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
-
-Mar 06, 2020 12:44:52 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:44:52 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
-
-Mar 06, 2020 12:44:54 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:44:54 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
-
-Mar 06, 2020 12:44:57 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:44:57 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
-
-Mar 06, 2020 12:44:59 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:44:59 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
-
-Mar 06, 2020 12:45:01 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:45:02 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:45:03 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:45:03 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
-
-Mar 06, 2020 12:45:15 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:45:17 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:45:17 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
-
-Mar 06, 2020 12:45:46 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:45:46 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Upcoming Events requested...
-
-Mar 06, 2020 12:45:47 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:45:47 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
-
-Mar 06, 2020 12:46:15 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:46:15 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
-
-Mar 06, 2020 12:46:17 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:46:19 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 Received a Valid Request.
-
-Mar 06, 2020 12:46:19 AM LoggingSystem.LoggingSystem infoMessage
-INFO: ServletFri Mar 06 00:41:20 GMT 2020 All Events requested...
+Mar 06, 2020 12:58:27 PM LoggingSystem.LoggingSystem infoMessage
+INFO: ServletFri Mar 06 12:50:12 GMT 2020 Returning ASSET Categories.
 

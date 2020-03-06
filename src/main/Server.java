@@ -60,7 +60,7 @@ public class Server extends Thread {
             jettyContextHandler.addServlet(servlets.DashboardServlet.class, "/dashboard/*");
             jettyContextHandler.addServlet(servlets.UserServlet.class, "/user/*");
             jettyContextHandler.addServlet(servlets.JobServlet.class, "/job/*");
-            jettyContextHandler.addServlet(servlets.AssetServlet.class, "/asset/*");
+            jettyContextHandler.addServlet(servlets.AssetServlet.class, "/assets/*");
             jettyContextHandler.addServlet(servlets.UtilityServlet.class, "/utilities/*");
             jettyContextHandler.addServlet(servlets.EventServlet.class, "/events/*");
             //this.run();
@@ -101,7 +101,7 @@ public class Server extends Thread {
             jettyContextHandler.addServlet(servlets.DashboardServlet.class, "/dashboard/*");
             jettyContextHandler.addServlet(servlets.UserServlet.class, "/user/*");
             jettyContextHandler.addServlet(servlets.JobServlet.class, "/job/*");
-            jettyContextHandler.addServlet(servlets.AssetServlet.class, "/asset/*");
+            jettyContextHandler.addServlet(servlets.AssetServlet.class, "/assets/*");
             jettyContextHandler.addServlet(servlets.UtilityServlet.class, "/utilities/*");
             jettyContextHandler.addServlet(servlets.EventServlet.class, "/events/*");
 

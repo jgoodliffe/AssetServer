@@ -649,7 +649,6 @@ public class SQLQueries {
                 JSONObject event = new JSONObject();
                 int total_rows = rs.getMetaData().getColumnCount();
                 for (int i = 0; i < total_rows; i++) {
-                    JSONObject obj = new JSONObject();
                     event.put(rs.getMetaData().getColumnLabel(i + 1)
                             .toLowerCase(), rs.getObject(i + 1));
                 }
@@ -697,7 +696,7 @@ public class SQLQueries {
         }
     }
 
-    public boolean addEvent(String eventName, String startDate, String endDate, String notes, String projectManager) {
+    public boolean addEvent(String eventName, String eventType, String startDate, String endDate, String notes, String projectManager) {
         System.out.println(startDate);
         try {
             String sql = "INSERT INTO events(name, startDate, endDate, notes, type, projectManager) VALUES (?,?,?,?,?,?);";
@@ -706,7 +705,7 @@ public class SQLQueries {
             p.setString(2,startDate);
             p.setString(3,endDate);
             p.setString(4,notes);
-            p.setString(5," ");
+            p.setString(5,eventType);
             p.setInt(6,Integer.parseInt(projectManager));
             p.execute();
             return true;
@@ -725,5 +724,57 @@ public class SQLQueries {
                 }
             }
         }
+    }
+
+    public JSONArray getAssetCategories(){
+        JSONArray allCategories = new JSONArray();
+        try{
+            PreparedStatement p = conn.prepareStatement("SELECT category from assets");
+            ResultSet rs = p.executeQuery();
+            while(rs.next()){
+                allCategories.put(rs.getString("category"));
+            }
+            return allCategories;
+        } catch (SQLException e){
+            e.printStackTrace();
+            return new JSONArray();
+        }
+    }
+
+    public JSONArray getAssetsByCategory(String category){
+        JSONArray allAssets = new JSONArray();
+        try{
+            PreparedStatement psmt = conn.prepareStatement("SELECT * FROM assets WHERE category LIKE?");
+            psmt.setString(1,category);
+            ResultSet rs = psmt.executeQuery();
+            while(rs.next()){
+                JSONObject asset = new JSONObject();
+                int total_rows = rs.getMetaData().getColumnCount();
+                for (int i = 0; i < total_rows; i++) {
+                    asset.put(rs.getMetaData().getColumnLabel(i + 1)
+                            .toLowerCase(), rs.getObject(i + 1));
+                }
+                allAssets.put(asset);
+            }
+            return allAssets;
+        } catch (SQLException e){
+            e.printStackTrace();
+            return allAssets;
+        }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close(); // <-- This is important
+                    DataStore.getInstance().newConnection();
+                    conn = DataStore.getInstance().getConn();
+                } catch (SQLException e) {
+                    /* handle exception */
+                }
+            }
+        }
+    }
+
+    public JSONArray getAllAssets() {
+        return new JSONArray();
     }
 }
